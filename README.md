@@ -31,7 +31,5 @@ Brute Force is still in a very early beta phase, which means bugs, glitches, and
 	\maps\ - officiall Brute Force maps
 
 
-**Info & Contact**
-
 
 mbnq.pl 2014 - 2024
