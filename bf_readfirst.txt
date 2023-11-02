@@ -1,48 +1,43 @@
 ***********************************************************************
 	   Red Alert 2 Yuri's Revenge - Brute Force Beta 
-Version: 0.6.14
+Version: 0.6.401
 ***********************************************************************
 
 *** Installation ***
 
-This mod requires a clean installation of
-Red Alert 2 and Yuri's Revenge expansion pack to play.
+This mod requires a clean installation of Red Alert 2 and the Yuri's Revenge expansion pack to play.
 
-Make sure your game is in 1.001 version before installation.
-Installer should update your game by itself but you can download 
-game patch at mbnq.pl in case of problems, look for brute force files.
+Ensure your game is updated to version 1.001 before installation. 
+You can use it with EA version.
 
-It's strongly recommended to make game folder backup before installing mod.
+It is strongly recommended that you make a backup of the game folder before installing the mod.
+
+
+
+
+
+
 
 
 *** Important ****
 
-! Use bf_launcher.bat to run the mod !
+! Use BF_LAUNCHER.exe to run the mod !
 
 
-Brute Force is still in very early beta phase which means bugs, glitches 
-and crashes will occur.
-
-
-*** Important files ***
-
-
-	changelog.txt - changelog
-	bf_license.txt - license
-	bf_readfirst.txt - readme
-	bf_launcher.bat - launcher
-	bf_updater.bat - updater
-	bf_uninstall.bat - uninstaller
+Brute Force is still in a very early beta phase, which means bugs, glitches, and crashes will occur.
 
 	\maps\ - officiall Brute Force maps
-	\tools\ - lan patch, game patch, string error fix
-	\bin\ - updater files
+
+
+
+
+
+
 
 
 *** Info & Contact ***
 
 Visit www.mbnq.pl for more info
 
-mbnq.pl 2014
+mbnq.pl 2014 - 2024
 mbnq@mbnq.pl mbnq00@gmail.com
-
