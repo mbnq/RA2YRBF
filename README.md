@@ -9,6 +9,8 @@ Version: 0.6.401
 
 **Installation**
 
+Download and unzip into game directory.
+
 This mod requires a clean installation of Red Alert 2 and the Yuri's Revenge expansion pack to play.
 
 Ensure your game is updated to version 1.001 before installation. 
