@@ -8,6 +8,7 @@ Version: 0.6.401
 
 
 **Installation**
+
 This mod requires a clean installation of Red Alert 2 and the Yuri's Revenge expansion pack to play.
 Ensure your game is updated to version 1.001 before installation. 
 You can use it with EA version.
@@ -15,11 +16,13 @@ It is strongly recommended that you make a backup of the game folder before inst
 
 
 **Important**
+
 ! Use BF_LAUNCHER.exe to run the mod !
 Brute Force is still in a very early beta phase, which means bugs, glitches, and crashes will occur.
 
 	\maps\ - officiall Brute Force maps
 
 **Info & Contact**
+
 Visit www.mbnq.pl for more info
 mbnq.pl 2014 - 2024
