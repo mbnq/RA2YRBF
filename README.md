@@ -34,5 +34,4 @@ Brute Force is still in a very early beta phase, which means bugs, glitches, and
 **Info & Contact**
 
 
-Visit www.mbnq.pl for more info
 mbnq.pl 2014 - 2024
