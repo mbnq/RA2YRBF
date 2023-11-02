@@ -9,8 +9,9 @@ Version: 0.6.401
 
 **Installation:**
 
-- Download and unzip into game directory.
+- Download, unzpi, copy files from RA2YRBF-main folder into the game directory.
 - (optional) Move maps from \maps\ to the game directory
+- (optional) Edit *ddraw.ini* to match your visual preferences
 
 This mod requires a clean installation of Red Alert 2 and the Yuri's Revenge expansion pack to play.
 Ensure your game is updated to version 1.001 before installation. 
