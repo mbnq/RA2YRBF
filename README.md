@@ -23,7 +23,7 @@ You can use it with EA version.
 
 - Use BF_LAUNCHER.exe to run the mod
 - Yuri is the main opponent, play against him
-- Brute Force is still in a very early beta phase, which means bugs, glitches, and crashes will occur
+- Brute Force is still in a very early beta phase, which means bugs, glitches and crashes will occur
 
 ***********************************************************************
 **Work in progress:**
