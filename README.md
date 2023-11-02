@@ -9,7 +9,7 @@ Version: 0.6.401
 
 **Installation:**
 
-- Download, unzpi, copy files from RA2YRBF-main folder into the game directory.
+- Download, unzip, copy files from RA2YRBF-main folder into the game directory.
 - (optional) Move maps from \maps\ to the game directory
 - (optional) Edit *ddraw.ini* to match your visual preferences
 
