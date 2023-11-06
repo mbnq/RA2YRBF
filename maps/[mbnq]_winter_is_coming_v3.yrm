@@ -966,7 +966,7 @@ PercentBuilt=0
 PlayerControl=no
 
 [Basic]
-Name=[mbnq] Winter is coming ! PRO
+Name=[mbnq] Winter is coming COOP
 Percent=0
 GameMode=standard, meatgrind, navalwar, nukewar, airwar, megawealth, duel, cooperative, teamgame
 HomeCell=98
