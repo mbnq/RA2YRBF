@@ -29,6 +29,7 @@ You can use it with EA version.
 *still missing some, sorry!*
 - Ares and Syringe: https://github.com/Ares-Developers
 - CnC DDraw: https://github.com/FunkyFr3sh/cnc-ddraw
+- C&C AI Editor: Askeladd
 
 ***********************************************************************
 **Work in progress:**
