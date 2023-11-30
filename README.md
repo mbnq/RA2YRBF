@@ -32,6 +32,7 @@ You can use it with EA version.
 - C&C AI Editor: Askeladd
 - Open Source SHP Builder: Banshee, Stuck, Pad, VK
 - XCC Utilities: Olaf Van Der Spek
+- FinalAlert: Matthias Wagner and Contributors
 
 ***********************************************************************
 **Work in progress:**
