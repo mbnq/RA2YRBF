@@ -30,6 +30,8 @@ You can use it with EA version.
 - Ares and Syringe: https://github.com/Ares-Developers
 - CnC DDraw: https://github.com/FunkyFr3sh/cnc-ddraw
 - C&C AI Editor: Askeladd
+- Open Source SHP Builder: Banshee, Stuck, Pad, VK
+- XCC Utilities: Olaf Van Der Spek
 
 ***********************************************************************
 **Work in progress:**
