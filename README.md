@@ -3,7 +3,7 @@ Red Alert 2: Yuri's Revenge: Brute Force Mod
 
 ***********************************************************************
 	   ** Red Alert 2 Yuri's Revenge - Brute Force Beta **
-Version: 0.7.29 Stable
+Version: 0.7.295 Stable
 ***********************************************************************
 **Installation:**
 
@@ -39,7 +39,7 @@ Works well with the EA version.
 
 ***********************************************************************
 **Work in progress:**
-...a lot of things, head full of ideas *(I think I live for Yuri!)*
+...
 
 ***********************************************************************
 mbnq.pl 2014 - 2024
