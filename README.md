@@ -11,7 +11,7 @@ Version: 0.7.42
 - (optional) Use *cnc-ddraw config.exe* to match your visual preferences
 - Use *BF_LAUNCHER.exe* or *BF_MULTICPU.exe* to start the game
 
-*(if you having problems runnings those files try alternative .bat launcher in \tools\ folder)*
+*(if you having problems running those files try alternative .bat launcher in \tools\ folder)*
 
 This mod requires a clean installation of Red Alert 2 and the Yuri's Revenge expansion pack to play.
 Ensure your game is updated to version 1.001 before installation.
