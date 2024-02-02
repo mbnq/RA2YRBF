@@ -20,7 +20,7 @@ Works well with the EA version.
 **Important:**
 
 - Use *BF_LAUNCHER.exe* or *BF_LAUNCHER.bat* to run the mod
-- Yuri is the main opponent, play against him
+- Yuri is the main opponent, you should play against him
 - Brute Force is still in the beta phase, which means bugs, glitches and crashes will occur
 - Each included tool from tools folder comes with its own readme file
 
