@@ -45,7 +45,7 @@ Works well with the EA version.
 - CnC DDraw: https://github.com/FunkyFr3sh/cnc-ddraw
 - Phobos: https://Phobos.readthedocs.io
 - C&C AI Editor: Askeladd
-- Open Source SHP Builder: Banshee, Stuck, Pad, VK
+- Open Source SHP Builder: Banshee, Stucuk, PaD, VK
 - XCC Utilities: Olaf Van Der Spek
 - FinalAlert: Matthias Wagner and Contributors
 
