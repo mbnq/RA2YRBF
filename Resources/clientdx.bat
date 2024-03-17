@@ -1,0 +1,2 @@
+cd ..
+BFLauncher.exe -DX
