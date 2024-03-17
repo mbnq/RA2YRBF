@@ -3,7 +3,7 @@ Red Alert 2: Yuri's Revenge: Brute Force Mod
 
 ***********************************************************************
 	   ** Red Alert 2 Yuri's Revenge - Brute Force Beta **
-Version: 0.8.01
+Version: 0.8.02
 ***********************************************************************
 **Installation:**
 
@@ -37,6 +37,7 @@ Works well with the EA and Steam version.
 *still missing some, sorry!*
 
 - C&C Mod Haven: https://discord.gg/U556VAdT
+	Special Thanks to all of you guys!
 - Ares and Syringe: https://github.com/Ares-Developers
 - Phobos: https://Phobos.readthedocs.io
 - CnC DDraw: https://github.com/FunkyFr3sh/cnc-ddraw
