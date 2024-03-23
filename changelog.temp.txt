@@ -1,0 +1,3 @@
+0.8.06c
+- fixed wrong slide color in lobby
+- fixed soundtrack menu theme
