@@ -36,6 +36,7 @@ Works well with the EA and Steam version.
 **Additional dependencies & Special Thanks:**
 *still missing some, sorry!*
 
+- Gadom
 - C&C Mod Haven: https://discord.gg/U556VAdT
 	Special Thanks to all of you guys!
 - Ares and Syringe: https://github.com/Ares-Developers
