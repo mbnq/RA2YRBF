@@ -38,6 +38,7 @@ Works well with the EA and Steam version.
 Please ask questions in the comments on ModDB, Nexus Mods, GitHub or here: https://discord.gg/EvvtUZWH
 
 - Q: does it have its own campaign?
+
   A: not yet, but it will
 
 - Q: I just installed this mod but it will not start because it says the MSVCP140.dll and another two .dll is missing.
