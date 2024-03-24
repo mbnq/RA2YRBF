@@ -54,7 +54,7 @@ Works well with the EA and Steam version.
 
   A: Yes, you can't, Yuri is meant to be main AI opponent in this mode, however Freemind Army may come in the future
 
-- Q: How do add my custom map?
+- Q: How to add my cool custom map?
 
   A: Look at \tools\bf_brutelizemap.zip (inside mod package, there is readme.md inside too), 
      thats a map converter that makes your map compatibile with Brute Force by simple drag and drop. 
