@@ -37,37 +37,7 @@ Works well with the EA and Steam version.
 ***********************************************************************
 **FAQ:**
 
-- Q: does it have its own campaign?
-
-  A: Not yet, but it will have one in the future
-
-- Q: I just installed this mod but it will not start because it says the MSVCP140.dll and another two .dll is missing.
-
-  A: You need to install Latest supported Visual C++ Redistributable by Microsoft, both x64 and x86 versions.
-
-- Q: I think something's wrong with the tech advancement, cause I'm not able to build a War Factory, or any further buildings. 
-     Just Power - Barracks - Refinery - Tech Oil Derrick .. and that's it.
-
-  A: You only have access to basic units. To get better stuff, look for scattered supply packs that contain random buildings, units, and bonuses.
-     There are also other ways to get more building options, you have to find them - thats the part of the game.
-
-- Q: I can't play as Yuri
-
-  A: Yes, you can't, Yuri is meant to be main AI opponent in this mode, however Freemind Army may come in the future
-
-- Q: How to add my cool custom map?
-
-  A: Look at \tools\bf_brutelizemap.zip (inside mod package, there is readme.md inside too), 
-     thats a map converter that makes your map compatibile with Brute Force by simple drag and drop. 
-	 After conversion move or copy your map to Command & Conquer Red Alert II\Maps\Custom\ folder
-	 
-	   - (important!) if your map has other file extension (.yrm for example) change it to .map
-	   - (optional) sometimes map name (inside map file) must be identical as map filename
-	   - (optional) using FinalAlert2 or Notepad++ to edit map manually is recommended
-
-Please ask questions in the comments on ModDB, Nexus Mods, GitHub or here: https://discord.gg/dJrpWAWj (#mod-brute-force channel)
-Make sure to read this before you ask questions please: https://github.com/mbnq/RA2YRBF/wiki
-
+- moved here https://github.com/mbnq/RA2YRBF/wiki/FAQ
 
 ***********************************************************************
 **Additional dependencies & Special Thanks:**
