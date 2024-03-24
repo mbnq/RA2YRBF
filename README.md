@@ -20,7 +20,6 @@ Works well with the EA and Steam version.
 
 - Use *BFLauncher.exe* to run the mod
 - Yuri is the main opponent, you should play against him
-- 
 - Brute Force is still in the beta phase, which means bugs, glitches and crashes will occur
 - Each included tool from tools folder comes with its own readme file
 
