@@ -56,8 +56,8 @@ Works well with the EA and Steam version.
 
 - Q: How do add my custom map?
 
-  A: Look at \tools\bf_brutelizemap.zip (inside mod package) there is readme.md inside, thats 
-     a map converter that makes your map compatibile with Brute Force by simple drag and drop. 
+  A: Look at \tools\bf_brutelizemap.zip (inside mod package, there is readme.md inside too), 
+     thats a map converter that makes your map compatibile with Brute Force by simple drag and drop. 
 	 After conversion move or copy your map to  \Maps\Custom\ folder in .map format
 	 
 	   - (note) if your map has other file extension (.yrm for example) simply change it to .map
