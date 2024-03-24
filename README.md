@@ -35,7 +35,6 @@ Works well with the EA and Steam version.
 
 ***********************************************************************
 **FAQ:**
-Please ask questions in the comments on ModDB, Nexus Mods, GitHub or here: https://discord.gg/EvvtUZWH
 
 - Q: does it have its own campaign?
 
@@ -57,6 +56,8 @@ Please ask questions in the comments on ModDB, Nexus Mods, GitHub or here: https
 - Q: How do add my custom map?
 
   A: Look at \tools\bf_brutelizemap.zip there is readme.md inside, then you'd have to add it to \Maps\Custom\ folder in .map format
+
+Please ask questions in the comments on ModDB, Nexus Mods, GitHub or here: https://discord.gg/EvvtUZWH
 
 
 ***********************************************************************
