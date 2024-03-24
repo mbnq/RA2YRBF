@@ -39,7 +39,7 @@ Please ask questions in the comments on ModDB, Nexus Mods, GitHub or here: https
 
 - Q: does it have its own campaign?
 
-  A: not yet, but it will
+  A: Not yet, but it will have one in the future
 
 - Q: I just installed this mod but it will not start because it says the MSVCP140.dll and another two .dll is missing.
 
