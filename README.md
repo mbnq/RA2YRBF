@@ -24,7 +24,7 @@ Works well with the EA and Steam version.
 - Each included tool from tools folder comes with its own readme file
 - If you are not installing for the first time but updating the Brute Force mod
   use bf_uninstaller.bat from \tools\bf_tools\bf_uninstaller.zip first (readme included)
-  then install the mod
+  then install the new version of the mod
 
 ***********************************************************************
 **Notes:**
@@ -49,6 +49,7 @@ Works well with the EA and Steam version.
      Just Power - Barracks - Refinery - Tech Oil Derrick .. and that's it.
 
   A: You only have access to basic units. To get better stuff, look for scattered supply packs that contain random buildings, units, and bonuses.
+     There are also other ways to get more building options, you have to find them - thats the part of the game.
 
 - Q: I can't play as Yuri
 
@@ -62,8 +63,9 @@ Works well with the EA and Steam version.
 	 
 	   - (important!) if your map has other file extension (.yrm for example) change it to .map
 	   - (optional) sometimes map name (inside map file) must be identical as map filename
+	   - (optional) using FinalAlert2 or Notepad++ to edit map manually is recommended
 
-Please ask questions in the comments on ModDB, Nexus Mods, GitHub or here: https://discord.gg/EvvtUZWH
+Please ask questions in the comments on ModDB, Nexus Mods, GitHub or here: https://discord.gg/dJrpWAWj (#mod-brute-force channel)
 
 
 ***********************************************************************
