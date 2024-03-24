@@ -57,7 +57,8 @@ Works well with the EA and Steam version.
 - Q: How do add my custom map?
 
   A: Look at \tools\bf_brutelizemap.zip there is readme.md inside, then you'd have to add it to \Maps\Custom\ folder in .map format
-     - Map name (inside map file) must be identical as map filename!
+     - sometimes map name (inside map file) must be identical as map filename
+	 - if your map has other file extension (.yrm for example) simply change it to .map
 
 Please ask questions in the comments on ModDB, Nexus Mods, GitHub or here: https://discord.gg/EvvtUZWH
 
