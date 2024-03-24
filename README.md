@@ -42,17 +42,21 @@ Please ask questions in the comments on ModDB, Nexus Mods, GitHub or here: https
   A: not yet, but it will
 
 - Q: I just installed this mod but it will not start because it says the MSVCP140.dll and another two .dll is missing.
-- A: You need to install Latest supported Visual C++ Redistributable by Microsoft, both x64 and x86 versions.
+
+A: You need to install Latest supported Visual C++ Redistributable by Microsoft, both x64 and x86 versions.
 
 - Q: I think something's wrong with the tech advancement, cause I'm not able to build a War Factory, or any further buildings. 
      Just Power - Barracks - Refinery - Tech Oil Derrick .. and that's it.
-- A: You only have access to basic units. To get better stuff, look for scattered supply packs that contain random buildings, units, and bonuses.
+
+A: You only have access to basic units. To get better stuff, look for scattered supply packs that contain random buildings, units, and bonuses.
 
 - Q: I can't play as Yuri
-- A: Yes, you can't, Yuri is meant to be main AI opponent in this mode, however Freemind Army may come in the future
+
+A: Yes, you can't, Yuri is meant to be main AI opponent in this mode, however Freemind Army may come in the future
 
 - Q: How do add my custom map?
-- A: Look at \tools\bf_brutelizemap.zip there is readme.md inside, then you'd have to add it to \Maps\Custom\ folder in .map format
+
+A: Look at \tools\bf_brutelizemap.zip there is readme.md inside, then you'd have to add it to \Maps\Custom\ folder in .map format
 
 
 ***********************************************************************
