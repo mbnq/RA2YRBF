@@ -3,7 +3,7 @@ Red Alert 2: Yuri's Revenge: Brute Force Mod
 
 ***********************************************************************
 	   ** Red Alert 2 Yuri's Revenge - Brute Force Beta **
-Version: 0.8.07
+Version: 0.8.08
 ***********************************************************************
 **Installation:**
 
@@ -20,6 +20,7 @@ Works well with the EA and Steam version.
 
 - Use *BFLauncher.exe* to run the mod
 - Yuri is the main opponent, you should play against him
+- 
 - Brute Force is still in the beta phase, which means bugs, glitches and crashes will occur
 - Each included tool from tools folder comes with its own readme file
 
@@ -33,10 +34,31 @@ Works well with the EA and Steam version.
   I'm continually working on optimization tweaks.
 
 ***********************************************************************
+**FAQ:**
+Please ask questions in the comments on ModDB, Nexus Mods, GitHub or here: https://discord.gg/EvvtUZWH
+
+Q: does it have its own campaign?
+A: not yet, but it will
+
+Q: I just installed this mod but it will not start because it says the MSVCP140.dll and another two .dll is missing.
+A: You need to install Latest supported Visual C++ Redistributable by Microsoft, both x64 and x86 versions.
+
+Q: I think something's wrong with the tech advancement, cause I'm not able to build a War Factory, or any further buildings. 
+   Just Power - Barracks - Refinery - Tech Oil Derrick .. and that's it.
+A: You only have access to basic units. To get better stuff, look for scattered supply packs that contain random buildings, units, and bonuses.
+
+Q: I can't play as Yuri
+A: Yes, you can't, Yuri is meant to be main AI opponent in this mode, however Freemind Army may come in the future
+
+Q: How do add my custom map?
+A: Look at \tools\bf_brutelizemap.zip there is readme.md inside, then you'd have to add it to \Maps\Custom\ folder in .map format
+
+
+***********************************************************************
 **Additional dependencies & Special Thanks:**
 *still missing some, sorry!*
 
-- Gadom
+- Testing and supporting me: Gadom
 - C&C Mod Haven: https://discord.gg/U556VAdT
 	Special Thanks to all of you guys!
 - Ares and Syringe: https://github.com/Ares-Developers
@@ -51,4 +73,4 @@ Works well with the EA and Steam version.
 - FinalAlert: Matthias Wagner and Contributors
 
 ***********************************************************************
-mbnq.pl 2014 - 2024
+mbnq.pl 2012 - 2024
