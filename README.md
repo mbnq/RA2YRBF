@@ -66,6 +66,7 @@ Works well with the EA and Steam version.
 	   - (optional) using FinalAlert2 or Notepad++ to edit map manually is recommended
 
 Please ask questions in the comments on ModDB, Nexus Mods, GitHub or here: https://discord.gg/dJrpWAWj (#mod-brute-force channel)
+Make sure to read this before you ask questions please: https://github.com/mbnq/RA2YRBF/wiki
 
 
 ***********************************************************************
