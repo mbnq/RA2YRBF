@@ -58,9 +58,9 @@ Works well with the EA and Steam version.
 
   A: Look at \tools\bf_brutelizemap.zip (inside mod package, there is readme.md inside too), 
      thats a map converter that makes your map compatibile with Brute Force by simple drag and drop. 
-	 After conversion move or copy your map to  \Maps\Custom\ folder in .map format
+	 After conversion move or copy your map to Command & Conquer Red Alert II\Maps\Custom\ folder
 	 
-	   - (note) if your map has other file extension (.yrm for example) simply change it to .map
+	   - (important!) if your map has other file extension (.yrm for example) change it to .map
 	   - (optional) sometimes map name (inside map file) must be identical as map filename
 
 Please ask questions in the comments on ModDB, Nexus Mods, GitHub or here: https://discord.gg/EvvtUZWH
