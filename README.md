@@ -22,7 +22,9 @@ Works well with the EA and Steam version.
 - Yuri is the main opponent, you should play against him
 - Brute Force is still in the beta phase, which means bugs, glitches and crashes will occur
 - Each included tool from tools folder comes with its own readme file
-
+- If you are not installing for the first time but updating the Brute Force mod
+  use bf_uninstaller.bat from \tools\bf_tools\bf_uninstaller.zip first (readme included)
+  then install the mod
 
 ***********************************************************************
 **Notes:**
