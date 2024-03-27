@@ -46,6 +46,7 @@ Works well with the EA and Steam version.
 
 ***********************************************************************
 **Legal things:**
+
 All external solutions utilized in "Brute Force" belong to their rightful owners. 
 None of the solutions employed are for commercial or malicious purposes. 
 All content directly derived from the "Brute Force" modification is permissible for reuse at no cost, 
