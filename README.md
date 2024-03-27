@@ -41,7 +41,6 @@ Works well with the EA and Steam version.
 
 ***********************************************************************
 **Additional dependencies & Special Thanks:**
-*still missing some, sorry!*
 
 - moved here https://github.com/mbnq/RA2YRBF/wiki/Credits
 
