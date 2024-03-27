@@ -43,19 +43,15 @@ Works well with the EA and Steam version.
 **Additional dependencies & Special Thanks:**
 *still missing some, sorry!*
 
-- Testing and supporting me: Gadom
-- C&C Mod Haven: https://discord.gg/U556VAdT
-	Special Thanks to all of you guys!
-- Ares and Syringe: https://github.com/Ares-Developers
-- Phobos: https://Phobos.readthedocs.io
-- CnC DDraw: https://github.com/FunkyFr3sh/cnc-ddraw
-- CnC-Net: https://github.com/CnCNet
-- CnC Client: https://github.com/Starkku/cncnet-client-mod-base
-- Rampastring: http://www.moddb.com/members/rampastring
-- C&C AI Editor: Askeladd
-- Open Source SHP Builder: Banshee, Stucuk, PaD, VK
-- XCC Utilities: Olaf Van Der Spek
-- FinalAlert: Matthias Wagner and Contributors
+- moved here https://github.com/mbnq/RA2YRBF/wiki/Credits
+
+***********************************************************************
+**Legal things:***
+All external solutions utilized in "Brute Force" belong to their rightful owners. 
+None of the solutions employed are for commercial or malicious purposes. 
+All content directly derived from the "Brute Force" modification is permissible for reuse at no cost, 
+in another Command & Conquer game modification, 
+under the condition of crediting the authorship (www.mbnq.pl) under the "CC BY-NC-SA 4.0 DEED" license.
 
 ***********************************************************************
 mbnq.pl 2012 - 2024
