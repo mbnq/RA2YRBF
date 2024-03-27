@@ -6,7 +6,7 @@ REM https://www.mbnq.pl/
 
 call :intro
 
-set "files=INI Maps Resources tools ares.dll ares.dll.inj ares.mix BFLauncher.exe BFLauncherUnix.sh changelog.temp.txt cncnet5.dll expandmd70.mix expandmd71.mix expandmd72.mix expandmd73.mix gamemd.exe Phobos.dll Phobos.pdb qres.dat qres32.dll RA2MD.ini README.md Syringe.exe"
+set "files=INI Maps Resources tools ares.dll ares.dll.inj ares.mix BFLauncher.exe BFLauncherUnix.sh changelog.temp.txt cncnet5.dll expandmd70.mix expandmd71.mix expandmd72.mix expandmd73.mix gamemd.exe Phobos.dll Phobos.pdb qres.dat qres32.dll README.md Syringe.exe"
 set "filesExist=0"
 set _sample=%random%
 echo Checking for files...
