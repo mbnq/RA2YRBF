@@ -45,7 +45,7 @@ Works well with the EA and Steam version.
 - moved here https://github.com/mbnq/RA2YRBF/wiki/Credits
 
 ***********************************************************************
-**Legal things:***
+**Legal things:**
 All external solutions utilized in "Brute Force" belong to their rightful owners. 
 None of the solutions employed are for commercial or malicious purposes. 
 All content directly derived from the "Brute Force" modification is permissible for reuse at no cost, 
