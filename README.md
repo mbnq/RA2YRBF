@@ -3,17 +3,19 @@ Red Alert 2: Yuri's Revenge: Brute Force Mod
 
 ***********************************************************************
 	   ** Red Alert 2 Yuri's Revenge - Brute Force Beta **
-Version: 0.8.13_pre
+Version: 0.8.14
 ***********************************************************************
 **Installation:**
 
 - Download, unzip, copy files into the game directory
 - Use *BFLauncher.exe* to start the game
 
+If you are not installing for the first time but updating the Brute Force mod
+use bf_uninstaller.bat first then install the new version of the mod.
+
 This mod requires a clean installation of Red Alert 2 and the Yuri's Revenge expansion pack to play.
 Ensure your game is updated to version 1.001 before installation.
 Works well with the EA and Steam version.
-
 
 ***********************************************************************
 **Important:**
@@ -22,9 +24,6 @@ Works well with the EA and Steam version.
 - Yuri is the main opponent, you should play against him
 - Brute Force is still in the beta phase, which means bugs, glitches and crashes will occur
 - Each included tool from tools folder comes with its own readme file
-- If you are not installing for the first time but updating the Brute Force mod
-  use bf_uninstaller.bat from \tools\bf_tools\bf_uninstaller.zip first (readme included)
-  then install the new version of the mod
 
 ***********************************************************************
 **Notes:**
@@ -45,7 +44,7 @@ Works well with the EA and Steam version.
 - moved here https://github.com/mbnq/RA2YRBF/wiki/Credits
 
 ***********************************************************************
-**Legal things:**
+**Legal:**
 
 All external solutions utilized in "Brute Force" belong to their rightful owners. 
 None of the solutions employed are for commercial or malicious purposes. 
