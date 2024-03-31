@@ -896,7 +896,7 @@ VeinGrowthEnabled=yes
 TiberiumGrowthEnabled=yes
 IgnoreGlobalAITriggers=no
 TiberiumDeathToVisceroid=no
-BridgeStrength=999999999
+BridgeStrength=10000
 
 [British]
 IQ=0
@@ -2377,11 +2377,11 @@ InitialVeteran=no
 HarvesterImmune=no
 TiberiumSpreads=yes
 TiberiumExplosive=no
-DestroyableBridges=no
-BridgeStrength=999999999
+DestroyableBridges=yes
+BridgeStrength=10000
 
 [CombatDamage]
-BridgeStrength=999999999
+BridgeStrength=10000
 
 [Structures]
 0=Neutral,CABHUT,256,84,82,64,None,1,0,1,0,0,None,None,None,0,0

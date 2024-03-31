@@ -18,7 +18,7 @@ Waypoint8=296,81
 NumberStartingPoints=8
 
 [CombatDamage]
-BridgeStrength=999999999
+BridgeStrength=10000
 
 
 [Preview]
@@ -1204,7 +1204,7 @@ CarryOverCap=0
 NewINIFormat=4
 NextScenario=
 SkipMapSelect=no
-BridgeStrength=999999999
+BridgeStrength=10000
 CarryOverMoney=0.000000
 AltNextScenario=
 MultiplayerOnly=1
@@ -3969,7 +3969,7 @@ Meteorites=no
 Visceroids=yes
 FixedAlliance=no
 TiberiumGrows=yes
-BridgeStrength=999999999
+BridgeStrength=10000
 InitialVeteran=no
 HarvesterImmune=no
 TiberiumSpreads=yes

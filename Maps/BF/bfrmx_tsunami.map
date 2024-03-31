@@ -15,7 +15,7 @@ NumberStartingPoints=4
 NumCoopHumanStartSpots=4
 
 [CombatDamage]
-BridgeStrength=999999999
+BridgeStrength=10000
 
 [Preview]
 Size=0,0,178,88
@@ -816,7 +816,7 @@ CarryOverCap=0
 NewINIFormat=4
 NextScenario=pacific01
 SkipMapSelect=no
-BridgeStrength=999999999
+BridgeStrength=10000
 AltNextScenario=mp18s3
 MultiplayerOnly=0
 IceGrowthEnabled=yes
@@ -2922,7 +2922,7 @@ Meteorites=no
 Visceroids=no
 FixedAlliance=no
 TiberiumGrows=no
-BridgeStrength=999999999
+BridgeStrength=10000
 InitialVeteran=no
 HarvesterImmune=no
 TiberiumSpreads=yes

@@ -19,7 +19,7 @@ DetailMinFrameRateMovie=99
 DetailMinFrameRateNormal=92
 
 [CombatDamage]
-BridgeStrength=999999999
+BridgeStrength=10000
 
 [Preview]
 Size=0,0,190,94
@@ -1277,7 +1277,7 @@ CarryOverCap=0
 NewINIFormat=4
 NextScenario=sanddust
 SkipMapSelect=no
-BridgeStrength=999999999
+BridgeStrength=10000
 CarryOverMoney=0.000000
 AltNextScenario=desertdawn
 MultiplayerOnly=1
@@ -3434,12 +3434,12 @@ Meteorites=no
 Visceroids=yes
 FixedAlliance=no
 TiberiumGrows=yes
-BridgeStrength=999999999
+BridgeStrength=10000
 InitialVeteran=no
 HarvesterImmune=no
 TiberiumSpreads=yes
 TiberiumExplosive=no
-DestroyableBridges=no
+DestroyableBridges=yes
 
 [Structures]
 0=Neutral,CABUNK02,256,93,43,64,None,1,0,1,0,0,None,None,None,0,0

@@ -21,7 +21,7 @@ NumCoopHumanStartSpots=2
 [AircraftTypes]
 
 [CombatDamage]
-BridgeStrength=999999999
+BridgeStrength=10000
 
 [INGRNLMP]
 Name=Invisible Green Light Post
@@ -910,7 +910,7 @@ CarryOverCap=0
 NewINIFormat=4
 NextScenario=
 SkipMapSelect=no
-BridgeStrength=999999999
+BridgeStrength=10000
 AltNextScenario=
 MultiplayerOnly=1
 IceGrowthEnabled=yes
@@ -2851,12 +2851,12 @@ Meteorites=no
 Visceroids=no
 FixedAlliance=no
 TiberiumGrows=yes
-BridgeStrength=999999999
+BridgeStrength=10000
 InitialVeteran=no
 HarvesterImmune=no
 TiberiumSpreads=yes
 TiberiumExplosive=no
-DestroyableBridges=no
+DestroyableBridges=yes
 
 [Structures]
 0=Neutral,CAOILD,256,52,106,64,None,1,0,1,0,0,None,None,None,0,0

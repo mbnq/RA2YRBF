@@ -930,7 +930,7 @@ VeinGrowthEnabled=no
 TiberiumGrowthEnabled=yes
 IgnoreGlobalAITriggers=no
 TiberiumDeathToVisceroid=no
-BridgeStrength=999999999
+BridgeStrength=10000
 
 [Events]
 01000000=1,13,0,20
@@ -2670,11 +2670,11 @@ InitialVeteran=no
 HarvesterImmune=no
 TiberiumSpreads=no
 TiberiumExplosive=no
-DestroyableBridges=no
-BridgeStrength=999999999
+DestroyableBridges=yes
+BridgeStrength=10000
 
 [CombatDamage]
-BridgeStrength=999999999
+BridgeStrength=10000
 
 [Structures]
 0=Neutral,CASLAB,256,85,99,64,None,1,0,1,0,0,None,None,None,0,0

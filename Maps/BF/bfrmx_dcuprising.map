@@ -14,7 +14,7 @@ Waypoint8=0,0
 NumberStartingPoints=5
 
 [CombatDamage]
-BridgeStrength=999999999
+BridgeStrength=10000
 
 [Preview]
 Size=0,0,176,101
@@ -1644,7 +1644,7 @@ CarryOverCap=0
 NewINIFormat=4
 NextScenario=GDI2A.map
 SkipMapSelect=no
-BridgeStrength=999999999
+BridgeStrength=10000
 AltNextScenario=GDI9C.MAP
 MultiplayerOnly=1
 IceGrowthEnabled=yes
@@ -3799,12 +3799,12 @@ Meteorites=no
 Visceroids=no
 FixedAlliance=no
 TiberiumGrows=no
-BridgeStrength=999999999
+BridgeStrength=10000
 InitialVeteran=no
 HarvesterImmune=no
 TiberiumSpreads=yes
 TiberiumExplosive=no
-DestroyableBridges=no
+DestroyableBridges=yes
 
 [Structures]
 0=Neutral,CABHUT,256,105,134,64,None,1,0,1,0,0,None,None,None,0,0

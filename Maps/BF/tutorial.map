@@ -14,7 +14,7 @@ Waypoint8=216,82
 NumberStartingPoints=8
 
 [CombatDamage]
-BridgeStrength=999999999
+BridgeStrength=10000
 
 [Preview]
 Size=0,0,245,122
@@ -1827,7 +1827,7 @@ CarryOverCap=0
 NewINIFormat=4
 NextScenario=desertdawn
 SkipMapSelect=no
-BridgeStrength=999999999
+BridgeStrength=10000
 CarryOverMoney=0.000000
 AltNextScenario=oceanlab
 MultiplayerOnly=0
@@ -5283,12 +5283,12 @@ Meteorites=no
 Visceroids=yes
 FixedAlliance=no
 TiberiumGrows=yes
-BridgeStrength=999999999
+BridgeStrength=10000
 InitialVeteran=no
 HarvesterImmune=no
 TiberiumSpreads=yes
 TiberiumExplosive=no
-DestroyableBridges=no
+DestroyableBridges=yes
 
 [Structures]
 0=Neutral,CABUNK02,256,145,149,64,None,1,0,1,0,0,None,None,None,0,0
