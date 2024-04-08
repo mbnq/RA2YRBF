@@ -6,7 +6,10 @@ REM https://www.mbnq.pl/
 
 call :intro
 
-set "files=INI Maps Resources tools ares.dll ares.dll.inj ares.mix BFLauncher.exe BFLauncherUnix.sh changelog.temp.txt cncnet5.dll expandmd70.mix expandmd71.mix expandmd72.mix expandmd73.mix gamemd.exe Phobos.dll Phobos.pdb qres.dat qres32.dll README.md Syringe.exe"
+if exist ".gitattributes" (echo:Warning^^! detected repo files^^!)&&(goto bye)
+
+set "files=INI Maps Resources tools debug syringe.log spawn.ini soundmd.ini spawnmap.ini rulesmd.ini aimd.ini artmd.ini artmd.ini evamd.ini rbcvbf.ini mpzombie.ini mpmodesmd.ini mpbrutedoomsday2.ini mpanimaldoomsday2.ini heroicvehicles.ini heroicbuildings.ini heroicshields.ini heroicsidebonus.ini heroicbuildingsciv.ini heroicinfantry.ini ares.dll ares.dll.inj ares.mix BFLauncher.exe BFLauncherUnix.sh changelog.temp.txt cncnet5.dll expandmd70.mix expandmd71.mix expandmd72.mix expandmd73.mix gamemd.exe Phobos.dll Phobos.pdb qres.dat qres32.dll README.md Syringe.exe"
+
 set "filesExist=0"
 set _sample=%random%
 echo Checking for files...
