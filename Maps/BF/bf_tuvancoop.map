@@ -808,17 +808,6 @@ Size=0,0,151,74
 0ECCFA7C-G=yes
 0ECCFCAC-G=yes
 
-[Actions]
-01000000=1,98,7,_Amb_WindCold,0,0,0,0,A
-01000002=0
-01000004=1,98,7,_Amb_OceanLight,0,0,0,0,A
-01000006=1,98,7,_Amb_BirdsTemperate1,0,0,0,0,A
-01000008=1,98,7,_Amb_BirdsTemperate2,0,0,0,0,A
-01000010=1,98,7,_Amb_BirdsJungle1,0,0,0,0,A
-01000012=6,108,0,1,0,0,0,0,BS,19,7,Bonus,0,0,0,0,A,21,6,EVA_ReinforcementsHaveArrived,0,0,0,0,A,27,0,777,0,0,0,0,A,23,0,0,0,0,0,0,A,103,4,mission:c21timer,0,0,0,0,A
-01000014=2,108,0,1,0,0,0,0,BT,19,7,Bonus,0,0,0,0,A
-01000016=3,27,0,777,0,0,0,0,A,23,0,0,0,0,0,0,A,103,4,mission:c21timer,0,0,0,0,A
-01000018=8,6,0,4477,0,0,0,0,A,6,0,4478,0,0,0,0,A,6,0,4479,0,0,0,0,A,6,0,4480,0,0,0,0,A,6,0,4481,0,0,0,0,A,6,0,4482,0,0,0,0,A,21,6,EVA_EnemyInfantryBattalionDetected,0,0,0,0,A,19,7,NukeSiren,0,0,0,0,A
 
 [Africans]
 IQ=0
@@ -869,6 +858,7 @@ PercentBuilt=0
 PlayerControl=no
 
 [Basic]
+BridgeStrength=10000
 Name=tuvancoop
 Percent=0
 GameMode=standard, meatgrind, navalwar, nukewar, airwar, megawealth, duel, cooperative, teamgame
@@ -896,7 +886,7 @@ VeinGrowthEnabled=yes
 TiberiumGrowthEnabled=yes
 IgnoreGlobalAITriggers=no
 TiberiumDeathToVisceroid=no
-BridgeStrength=10000
+;BridgeStrength=10000
 
 [British]
 IQ=0
@@ -944,17 +934,6 @@ TechLevel=1
 PercentBuilt=0
 PlayerControl=no
 
-[Events]
-01000000=1,13,0,10
-01000002=0
-01000004=1,13,0,10
-01000006=1,13,0,10
-01000008=1,13,0,10
-01000010=1,13,0,10
-01000012=1,13,0,777
-01000014=1,13,0,777
-01000016=1,13,0,1
-01000018=1,13,0,850
 
 [French]
 IQ=0
@@ -2365,6 +2344,7 @@ PercentBuilt=0
 PlayerControl=no
 
 [SpecialFlags]
+BridgeStrength=10000
 Inert=no
 FogOfWar=no
 IonStorms=no
@@ -2378,10 +2358,11 @@ HarvesterImmune=no
 TiberiumSpreads=yes
 TiberiumExplosive=no
 DestroyableBridges=yes
-BridgeStrength=10000
+;BridgeStrength=10000
 
 [CombatDamage]
 BridgeStrength=10000
+;BridgeStrength=10000
 
 [Structures]
 0=Neutral,CABHUT,256,84,82,64,None,1,0,1,0,0,None,None,None,0,0
@@ -2431,17 +2412,6 @@ BridgeStrength=10000
 44=Neutral,CATEXS02,256,84,17,64,None,1,0,1,0,0,None,None,None,0,0
 45=Neutral,CAFARM06,256,16,83,64,None,1,0,1,0,0,None,None,None,0,0
 
-[Tags]
-01000001=2,sound_test 1,01000000
-01000003=0,New trigger 1,01000002
-01000005=0,sound_woda 1,01000004
-01000007=0,sound_ptaki1 1,01000006
-01000009=0,sound_ptak2 1,01000008
-01000011=0,sound_cos 1,01000010
-01000013=2,paczki 1,01000012
-01000015=2,paczki Clone 1,01000014
-01000017=0,TimerStart 1,01000016
-01000019=2,RefreshAI 1,01000018
 
 [TeamTypes]
 
@@ -3181,17 +3151,6 @@ BridgeStrength=10000
 158081=TREE05
 158082=TREE18
 
-[Triggers]
-01000000=Neutral,<none>,sound_test,0,1,1,1,0
-01000002=Americans,<none>,New trigger,0,1,1,1,0
-01000004=Neutral,<none>,sound_woda,0,1,1,1,0
-01000006=Neutral,<none>,sound_ptaki1,0,1,1,1,0
-01000008=Neutral,<none>,sound_ptak2,0,1,1,1,0
-01000010=Neutral,<none>,sound_cos,0,1,1,1,0
-01000012=Neutral,<none>,paczki,0,1,1,1,0
-01000014=Neutral,<none>,paczki Clone,0,1,1,1,0
-01000016=Neutral,<none>,TimerStart,0,1,1,1,0
-01000018=Neutral,<none>,RefreshAI,0,1,1,1,0
 
 [Units]
 0=Neutral,PICK,256,54,44,64,Guard,None,0,-1,0,-1,1,0
@@ -3226,3 +3185,24 @@ PlayerControl=no
 
 [Digest]
 1=VCaCITZ+NElIYcXYiDJ6ZlIBmh0=
+
+[Triggers]
+01000002=Neutral,<none>,BFStartTimer,0,1,1,1,0
+01000004=Neutral,<none>,BFCratesInLoop,0,1,1,1,0
+01000006=Neutral,<none>,BFCratesAtStart,0,1,1,1,0
+
+[Events]
+01000002=1,13,0,0
+01000004=1,13,0,777
+01000006=1,13,0,20
+
+[Actions]
+01000002=3,27,0,777,0,0,0,0,A,23,0,0,0,0,0,0,A,103,4,mission:c21timer,0,0,0,0,A
+01000004=13,27,0,777,0,0,0,0,A,23,0,0,0,0,0,0,A,108,0,1,0,0,0,0,A,108,0,1,0,0,0,0,B,21,6,EVA_ReinforcementsHaveArrived,0,0,0,0,A,103,4,mission:c21timer,0,0,0,0,A,108,0,1,0,0,0,0,C,108,0,1,0,0,0,0,D,108,0,1,0,0,0,0,E,108,0,1,0,0,0,0,F,108,0,1,0,0,0,0,F,108,0,1,0,0,0,0,G,108,0,1,0,0,0,0,H
+01000006=10,108,0,1,0,0,0,0,A,108,0,1,0,0,0,0,B,19,7,CrateFreeUnit,0,0,0,0,A,21,6,EVA_ReinforcementsReady,0,0,0,0,A,108,0,1,0,0,0,0,C,108,0,1,0,0,0,0,D,108,0,1,0,0,0,0,E,108,0,1,0,0,0,0,F,108,0,1,0,0,0,0,G,108,0,1,0,0,0,0,H
+
+[Tags]
+01000003=0,BFStartTimer 1,01000002
+01000005=2,BFCratesInLoop 1,01000004
+01000007=0,BFCratesAtStart 1,01000006
+    

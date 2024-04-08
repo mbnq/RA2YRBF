@@ -14,7 +14,8 @@ Waypoint8=0,0
 NumberStartingPoints=6
 
 [CombatDamage]
-BridgeStrength=500
+BridgeStrength=10000
+;BridgeStrength=500
 DestroyableBridges=yes
 
 [Preview]
@@ -1026,14 +1027,6 @@ AreTeamMembersRecruitable=no
 0ECCFA7C-G=yes
 0ECCFCAC-G=yes
 
-[Actions]
-01000000=8,6,0,4477,0,0,0,0,A,6,0,4478,0,0,0,0,A,6,0,4479,0,0,0,0,A,6,0,4480,0,0,0,0,A,6,0,4481,0,0,0,0,A,6,0,4482,0,0,0,0,A,21,6,EVA_EnemyInfantryBattalionDetected,0,0,0,0,A,19,7,WarningAlarm,0,0,0,0,A
-01000002=8,6,0,4477,0,0,0,0,A,6,0,4478,0,0,0,0,A,6,0,4479,0,0,0,0,A,6,0,4480,0,0,0,0,A,6,0,4481,0,0,0,0,A,6,0,4482,0,0,0,0,A,21,6,EVA_EnemyInfantryBattalionDetected,0,0,0,0,A,19,7,WarningAlarm,0,0,0,0,A
-01000004=10,108,0,1,0,0,0,0,M,108,0,1,0,0,0,0,O,27,0,777,0,0,0,0,A,23,0,0,0,0,0,0,A,103,4,mission:c21timer,0,0,0,0,A,17,0,12,0,0,0,0,A,17,0,14,0,0,0,0,A,17,0,15,0,0,0,0,A,17,0,16,0,0,0,0,A,21,6,EVA_NewTerrainDiscovered,0,0,0,0,A
-01000006=7,108,0,1,0,0,0,0,M,108,0,1,0,0,0,0,O,21,6,EVA_ReinforcementsHaveArrived,0,0,0,0,A,19,7,Bonus,0,0,0,0,A,27,0,777,0,0,0,0,A,23,0,0,0,0,0,0,A,103,4,mission:c21timer,0,0,0,0,A
-01000011=4,107,1,01000009,0,0,0,0,U,107,1,01000010,0,0,0,0,V,21,6,EVA_ReinforcementsHaveArrived,0,0,0,0,A,19,7,BootCampSelect,0,0,0,0,A
-01000013=1,21,6,Mis_A1_EvaRepairBridge,0,0,0,0,A
-01000015=8,63,0,50,0,0,0,0,AY,63,0,50,0,0,0,0,AZ,63,0,50,0,0,0,0,A,63,0,50,0,0,0,0,A,63,0,51,0,0,0,0,A,63,0,51,0,0,0,0,A,63,0,51,0,0,0,0,A,63,0,51,0,0,0,0,A
 
 [Africans]
 IQ=0
@@ -1084,6 +1077,7 @@ PercentBuilt=0
 PlayerControl=no
 
 [Basic]
+BridgeStrength=10000
 Name=oceanlab
 Percent=0
 GameMode=standard, meatgrind, navalwar, nukewar, airwar, megawealth, duel, cooperative
@@ -1144,14 +1138,6 @@ TechLevel=1
 PercentBuilt=0
 PlayerControl=no
 
-[Events]
-01000000=1,13,0,850
-01000002=1,51,0,1850
-01000004=1,13,0,1
-01000006=1,13,0,777
-01000011=1,13,0,50
-01000013=1,13,0,15
-01000015=1,13,0,0
 
 [French]
 IQ=0
@@ -3286,6 +3272,7 @@ PercentBuilt=0
 PlayerControl=no
 
 [SpecialFlags]
+BridgeStrength=10000
 Inert=no
 FogOfWar=no
 IonStorms=no
@@ -3352,14 +3339,6 @@ DestroyableBridges=yes
 65=Neutral,CABARR01,256,74,130,64,None,1,0,1,0,0,None,None,None,0,0
 66=Neutral,CASLAB,256,148,62,64,None,1,0,1,0,0,None,None,None,0,0
 
-[Tags]
-01000001=2,Refresh AI 1,01000000
-01000003=2,Refresh AI Random 1,01000002
-01000005=0,Paczki_na_start 1,01000004
-01000007=2,Paczki 1,01000006
-01000012=0,reinforce 1,01000011
-01000014=0,destroy_bridges 1,01000013
-01000016=0,destroy_this_fucking_bridge 1,01000015
 
 [TaskForces]
 0=01000008
@@ -3532,14 +3511,6 @@ DestroyableBridges=yes
 187101=TREE25
 187102=TREE21
 
-[Triggers]
-01000000=Neutral,<none>,Refresh AI,0,1,1,1,0
-01000002=Neutral,<none>,Refresh AI Random,0,1,1,1,0
-01000004=Neutral,<none>,Paczki_na_start,0,1,1,1,0
-01000006=Neutral,<none>,Paczki,0,1,1,1,0
-01000011=Neutral,<none>,reinforce,0,1,1,1,0
-01000013=Neutral,<none>,destroy_bridges,1,1,1,1,0
-01000015=Neutral,<none>,destroy_this_fucking_bridge,0,1,1,1,0
 
 [Units]
 0=Neutral,TUG,256,70,92,64,Guard,None,0,-1,0,-1,1,0
@@ -3582,3 +3553,24 @@ PlayerControl=no
 
 [Digest]
 1=1CoWL32dokd/tOHJPByN+se4eGY=
+
+[Triggers]
+01000002=Neutral,<none>,BFStartTimer,0,1,1,1,0
+01000004=Neutral,<none>,BFCratesInLoop,0,1,1,1,0
+01000006=Neutral,<none>,BFCratesAtStart,0,1,1,1,0
+
+[Events]
+01000002=1,13,0,0
+01000004=1,13,0,777
+01000006=1,13,0,20
+
+[Actions]
+01000002=3,27,0,777,0,0,0,0,A,23,0,0,0,0,0,0,A,103,4,mission:c21timer,0,0,0,0,A
+01000004=13,27,0,777,0,0,0,0,A,23,0,0,0,0,0,0,A,108,0,1,0,0,0,0,A,108,0,1,0,0,0,0,B,21,6,EVA_ReinforcementsHaveArrived,0,0,0,0,A,103,4,mission:c21timer,0,0,0,0,A,108,0,1,0,0,0,0,C,108,0,1,0,0,0,0,D,108,0,1,0,0,0,0,E,108,0,1,0,0,0,0,F,108,0,1,0,0,0,0,F,108,0,1,0,0,0,0,G,108,0,1,0,0,0,0,H
+01000006=10,108,0,1,0,0,0,0,A,108,0,1,0,0,0,0,B,19,7,CrateFreeUnit,0,0,0,0,A,21,6,EVA_ReinforcementsReady,0,0,0,0,A,108,0,1,0,0,0,0,C,108,0,1,0,0,0,0,D,108,0,1,0,0,0,0,E,108,0,1,0,0,0,0,F,108,0,1,0,0,0,0,G,108,0,1,0,0,0,0,H
+
+[Tags]
+01000003=0,BFStartTimer 1,01000002
+01000005=2,BFCratesInLoop 1,01000004
+01000007=0,BFCratesAtStart 1,01000006
+    
