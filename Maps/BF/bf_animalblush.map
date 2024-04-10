@@ -1326,11 +1326,6 @@ Size=0,0,289,69
 0ECCFA7C-G=yes
 0ECCFCAC-G=yes
 
-[Actions]
-01000002=3,27,0,777,0,0,0,0,A,23,0,0,0,0,0,0,A,103,4,mission:c21timer,0,0,0,0,A
-01000004=13,27,0,777,0,0,0,0,A,23,0,0,0,0,0,0,A,108,0,1,0,0,0,0,A,108,0,1,0,0,0,0,B,21,6,EVA_ReinforcementsHaveArrived,0,0,0,0,A,103,4,mission:c21timer,0,0,0,0,A,108,0,1,0,0,0,0,C,108,0,1,0,0,0,0,D,108,0,1,0,0,0,0,E,108,0,1,0,0,0,0,F,108,0,1,0,0,0,0,F,108,0,1,0,0,0,0,G,108,0,1,0,0,0,0,H
-01000006=10,108,0,1,0,0,0,0,A,108,0,1,0,0,0,0,B,19,7,CrateFreeUnit,0,0,0,0,A,21,6,EVA_ReinforcementsReady,0,0,0,0,A,108,0,1,0,0,0,0,C,108,0,1,0,0,0,0,D,108,0,1,0,0,0,0,E,108,0,1,0,0,0,0,F,108,0,1,0,0,0,0,G,108,0,1,0,0,0,0,H
-
 [Africans]
 IQ=0
 Edge=North
@@ -1420,8 +1415,6 @@ TechLevel=1
 PercentBuilt=0
 PlayerControl=no
 
-[CellTags]
-
 [Confederation]
 IQ=0
 Edge=North
@@ -1433,11 +1426,6 @@ NodeCount=0
 TechLevel=1
 PercentBuilt=0
 PlayerControl=no
-
-[Events]
-01000002=1,13,0,0
-01000004=1,13,0,777
-01000006=1,13,0,20
 
 [French]
 IQ=0
@@ -6730,11 +6718,6 @@ DestroyableBridges=yes
 222076=TREE13
 223075=TREE05
 223076=TREE07
-
-[Triggers]
-01000002=Neutral,<none>,start_timer,0,1,1,1,0
-01000004=Neutral,<none>,Paczki,0,1,1,1,0
-01000006=Neutral,<none>,Paczki_na_start,0,1,1,1,0
 
 [Units]
 0=Neutral,CAR,256,89,157,64,Guard,None,0,-1,0,-1,1,0

@@ -815,45 +815,6 @@ Size=0,0,190,94
 793=pfl9l9F/mdCHou6Kpvm8d6AolDAiPD64AXgK6IcAAoql+JCt/4mk9WN5tz9SgW2FzYmk2E
 794=YmFCoK94ql94ql+Iml94ml9xEAAA==
 
-[01000000]
-Max=5
-Full=yes
-Name=Civs
-Group=7
-House=Neutral
-Script=
-Whiner=no
-Droppod=no
-Suicide=no
-Loadable=no
-Prebuild=no
-Priority=5
-Waypoint=A
-Annoyance=no
-IonImmune=no
-Recruiter=no
-Reinforce=no
-TaskForce=
-TechLevel=1
-Aggressive=no
-Autocreate=no
-GuardSlower=no
-OnTransOnly=no
-AvoidThreats=no
-LooseRecruit=no
-VeteranLevel=1
-IsBaseDefense=no
-UseTransportOrigin=no
-MindControlDecision=2
-OnlyTargetHouseEnemy=no
-TransportsReturnOnUnload=no
-AreTeamMembersRecruitable=no
-
-[Actions]
-01000002=3,27,0,777,0,0,0,0,A,23,0,0,0,0,0,0,A,103,4,mission:c21timer,0,0,0,0,A
-01000004=9,27,0,777,0,0,0,0,A,23,0,0,0,0,0,0,A,108,0,1,0,0,0,0,A,108,0,1,0,0,0,0,B,21,6,EVA_ReinforcementsHaveArrived,0,0,0,0,A,103,4,mission:c21timer,0,0,0,0,A,108,0,1,0,0,0,0,C,108,0,1,0,0,0,0,D,108,0,1,0,0,0,0,K
-01000006=12,108,0,1,0,0,0,0,A,108,0,1,0,0,0,0,B,19,7,CrateFreeUnit,0,0,0,0,A,21,6,EVA_ReinforcementsReady,0,0,0,0,A,108,0,1,0,0,0,0,C,108,0,1,0,0,0,0,D,108,0,1,0,0,0,0,K,17,0,0,0,0,0,0,A,17,0,1,0,0,0,0,A,17,0,2,0,0,0,0,A,17,0,3,0,0,0,0,A,17,0,10,0,0,0,0,A
-
 [Africans]
 IQ=0
 Edge=North
@@ -958,11 +919,6 @@ TechLevel=1
 PercentBuilt=0
 PlayerControl=no
 
-[Events]
-01000002=1,13,0,0
-01000004=1,13,0,777
-01000006=1,13,0,20
-
 [French]
 IQ=0
 Edge=North
@@ -1009,11 +965,11 @@ PlayerControl=no
 6=Arabs
 7=Confederation
 8=Russians
-9=GDI
-10=Nod
-11=Neutral
-12=Special
-13=
+9=YuriCountry
+10=GDI
+11=Nod
+12=Neutral
+13=Special
 
 [Infantry]
 0=Neutral,E1,256,93,99,0,Guard,64,None,0,7,0,1,0
@@ -3166,14 +3122,6 @@ DestroyableBridges=yes
 44=Neutral,CABUNK04,256,142,104,64,None,1,0,1,0,0,None,None,None,0,0
 45=Neutral,CAARMY01,256,90,97,64,None,1,0,1,0,0,None,None,None,0,0
 
-[Tags]
-01000003=0,start_timer 1,01000002
-01000005=2,Paczki 1,01000004
-01000007=0,Paczki_na_start 1,01000006
-
-[TeamTypes]
-0=01000000
-
 [Terrain]
 16101=TREE21
 18102=TREE24
@@ -3472,11 +3420,6 @@ DestroyableBridges=yes
 183101=TREE26
 184101=TREE19
 185101=TREE28
-
-[Triggers]
-01000002=Neutral,<none>,start_timer,0,1,1,1,0
-01000004=Neutral,<none>,Paczki,0,1,1,1,0
-01000006=Neutral,<none>,Paczki_na_start,0,1,1,1,0
 
 [Waypoints]
 0=146103

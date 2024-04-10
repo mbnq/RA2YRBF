@@ -671,11 +671,6 @@ Size=0,0,240,120
 645=IALsACm8AHTz7C7UV5wIKywApPUvXADUSJwCIJUsACk8BSosCQk5O1M3OlI4O1I5PFMRAA
 646=A=
 
-[Actions]
-01000002=3,27,0,777,0,0,0,0,A,23,0,0,0,0,0,0,A,103,4,mission:c21timer,0,0,0,0,A
-01000004=13,27,0,777,0,0,0,0,A,23,0,0,0,0,0,0,A,108,0,1,0,0,0,0,A,108,0,1,0,0,0,0,B,21,6,EVA_ReinforcementsHaveArrived,0,0,0,0,A,103,4,mission:c21timer,0,0,0,0,A,108,0,1,0,0,0,0,C,108,0,1,0,0,0,0,D,108,0,1,0,0,0,0,E,108,0,1,0,0,0,0,F,108,0,1,0,0,0,0,F,108,0,1,0,0,0,0,G,108,0,1,0,0,0,0,H
-01000006=10,108,0,1,0,0,0,0,A,108,0,1,0,0,0,0,B,19,7,CrateFreeUnit,0,0,0,0,A,21,6,EVA_ReinforcementsReady,0,0,0,0,A,108,0,1,0,0,0,0,C,108,0,1,0,0,0,0,D,108,0,1,0,0,0,0,E,108,0,1,0,0,0,0,F,108,0,1,0,0,0,0,G,108,0,1,0,0,0,0,H
-
 [Basic]
 Name=[BFRMX] Atlantis
 Percent=0
@@ -705,11 +700,6 @@ VeinGrowthEnabled=yes
 TiberiumGrowthEnabled=yes
 IgnoreGlobalAITriggers=no
 TiberiumDeathToVisceroid=no
-
-[Events]
-01000002=1,13,0,0
-01000004=1,13,0,777
-01000006=1,13,0,20
 
 [Infantry]
 0=Neutral,CIVBBP,256,99,130,0,Guard,64,None,0,-1,0,0,0
@@ -3849,11 +3839,6 @@ DestroyableBridges=yes
 229=Neutral,CABHUT,256,107,163,64,None,1,0,1,0,0,None,None,None,0,0
 234=Neutral,CAMISC05,256,153,175,64,None,1,0,1,0,0,None,None,None,0,0
 
-[Tags]
-01000003=0,start_timer 1,01000002
-01000005=2,Paczki 1,01000004
-01000007=0,Paczki_na_start 1,01000006
-
 [TeamTypes]
 
 [Terrain]
@@ -4089,11 +4074,6 @@ DestroyableBridges=yes
 194128=TREE21
 196115=TREE21
 196128=TREE21
-
-[Triggers]
-01000002=Neutral,<none>,start_timer,0,1,1,1,0
-01000004=Neutral,<none>,Paczki,0,1,1,1,0
-01000006=Neutral,<none>,Paczki_na_start,0,1,1,1,0
 
 [Units]
 0=Neutral,CRUISE,256,81,117,64,Guard,None,0,-1,0,-1,1,1

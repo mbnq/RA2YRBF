@@ -461,11 +461,6 @@ Size=0,0,190,111
 435=hJeQg6yOJDhRKWxQZCOELLRFuAEgMSwAnCyxC1MgLcwaJIxUKoweBmyDPGqAOmuBOhEAAA
 436===
 
-[Actions]
-01000002=3,27,0,777,0,0,0,0,A,23,0,0,0,0,0,0,A,103,4,mission:c21timer,0,0,0,0,A
-01000004=13,27,0,777,0,0,0,0,A,23,0,0,0,0,0,0,A,108,0,1,0,0,0,0,A,108,0,1,0,0,0,0,B,21,6,EVA_ReinforcementsHaveArrived,0,0,0,0,A,103,4,mission:c21timer,0,0,0,0,A,108,0,1,0,0,0,0,C,108,0,1,0,0,0,0,D,108,0,1,0,0,0,0,E,108,0,1,0,0,0,0,F,108,0,1,0,0,0,0,F,108,0,1,0,0,0,0,G,108,0,1,0,0,0,0,H
-01000006=10,108,0,1,0,0,0,0,A,108,0,1,0,0,0,0,B,19,7,CrateFreeUnit,0,0,0,0,A,21,6,EVA_ReinforcementsReady,0,0,0,0,A,108,0,1,0,0,0,0,C,108,0,1,0,0,0,0,D,108,0,1,0,0,0,0,E,108,0,1,0,0,0,0,F,108,0,1,0,0,0,0,G,108,0,1,0,0,0,0,H
-
 [Basic]
 Name=[bfremix] DC Uprising 2
 Theme=No theme
@@ -495,11 +490,6 @@ VeinGrowthEnabled=no
 TiberiumGrowthEnabled=yes
 IgnoreGlobalAITriggers=no
 TiberiumDeathToVisceroid=no
-
-[Events]
-01000002=1,13,0,0
-01000004=1,13,0,777
-01000006=1,13,0,20
 
 [Infantry]
 0=Neutral,CZARNUCHPL,256,161,96,4,Guard,96,None,0,-1,0,1,1
@@ -2695,11 +2685,6 @@ DestroyableBridges=yes
 1034885=Neutral,CAPARK01,256,97,107,0,None,0,0,1,0,0,None,None,None,0,0
 1034886=Neutral,CAMISC04,256,83,100,0,None,0,0,1,0,0,None,None,None,0,0
 
-[Tags]
-01000003=0,BFStartTimer 1,01000002
-01000005=2,BFCratesInLoop 1,01000004
-01000007=0,BFCratesAtStart 1,01000006
-
 [TeamTypes]
 
 [Terrain]
@@ -3889,19 +3874,12 @@ DestroyableBridges=yes
 162110=LT_GEN01
 162117=LT_GEN04
 
-[Triggers]
-01000002=Neutral,<none>,BFStartTimer,0,1,1,1,0
-01000004=Neutral,<none>,BFCratesInLoop,0,1,1,1,0
-01000006=Neutral,<none>,BFCratesAtStart,0,1,1,1,0
-
 [Waypoints]
 0=148132
 1=137091
 2=112183
 3=115045
 4=46087
-
-
 
 [Digest]
 1=i+r0e2yZe2bRPTQuHTuRHBX3a+U=

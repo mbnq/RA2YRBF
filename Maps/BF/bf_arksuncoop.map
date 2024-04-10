@@ -13,28 +13,6 @@ Waypoint7=255,36
 Waypoint8=0,0
 NumberStartingPoints=7
 
-[AMRADR]
-Prerequisite=GACNST
-
-[GAAIRC]
-Prerequisite=GACNST
-
-[GAREFN]
-Prerequisite=AICENTRE
-
-[GAWEAT]
-TechLevel=11
-
-[General]
-LightningDamage=384
-LightningStormDuration=500
-
-[NARADR]
-Prerequisite=NACNST
-
-[NAREFN]
-Prerequisite=AICENTRE
-
 [Preview]
 Size=0,0,91,114
 
@@ -711,17 +689,6 @@ Size=0,0,91,114
 0ECCFA7C-G=yes
 0ECCFCAC-G=yes
 
-[Actions]
-01000000=1,36,0,4481,0,0,0,0,A
-01000002=3,17,0,9,0,0,0,0,A,23,0,0,0,0,0,0,A,21,6,Mis_S9_Yuri,0,0,0,0,A
-01000004=0
-01000006=4,108,0,1,0,0,0,0,M,108,0,1,0,0,0,0,N,108,0,1,0,0,0,0,O,108,0,1,0,0,0,0,P
-01000008=9,108,0,1,0,0,0,0,AE,108,0,1,0,0,0,0,AO,99,7,ChronosphereMove,0,0,0,0,AE,99,7,ChronosphereMove,0,0,0,0,AO,11,4,gui:cratesappear,0,0,0,0,A,21,6,EVA_ReinforcementsHaveArrived,0,0,0,0,A,27,0,777,0,0,0,0,A,23,0,0,0,0,0,0,A,103,4,mission:c21timer,0,0,0,0,A
-01000010=3,102,0,0,0,0,0,0,BZ,19,7,NukeSiren,0,0,0,0,A,0,0,0,0,0,0,0,A
-01000012=1,31,0,0,0,0,0,0,A
-01000014=4,21,6,EVA_BattlefieldControlOnline,0,0,0,0,BZ,27,0,777,0,0,0,0,A,23,0,0,0,0,0,0,A,103,4,mission:c21timer,0,0,0,0,A
-01000016=7,6,0,4477,0,0,0,0,A,6,0,4478,0,0,0,0,A,6,0,4479,0,0,0,0,A,6,0,4480,0,0,0,0,A,6,0,4481,0,0,0,0,A,21,6,EVA_EnemyInfantryBattalionDetected,0,0,0,0,A,19,7,WarningAlarm,0,0,0,0,A
-
 [Africans]
 IQ=0
 Edge=North
@@ -811,15 +778,6 @@ TechLevel=1
 PercentBuilt=0
 PlayerControl=no
 
-[CellTags]
-88086=01000001
-88091=01000017
-92084=01000003
-93083=01000007
-95081=01000009
-96080=01000013
-99081=01000009
-
 [Confederation]
 IQ=0
 Edge=North
@@ -831,17 +789,6 @@ NodeCount=0
 TechLevel=1
 PercentBuilt=0
 PlayerControl=no
-
-[Events]
-01000000=1,13,0,1
-01000002=1,13,0,1
-01000004=0
-01000006=1,13,0,1
-01000008=1,13,0,777
-01000010=1,51,0,600
-01000012=1,13,0,200
-01000014=1,13,0,1
-01000016=1,51,0,1500
 
 [French]
 IQ=0
@@ -2218,17 +2165,6 @@ DestroyableBridges=yes
 146=Neutral,NAREFN,256,70,83,64,None,1,0,1,0,0,None,None,None,0,0
 147=Neutral,NAREFN,256,80,72,64,None,1,0,1,0,0,None,None,None,0,0
 
-[Tags]
-01000001=0,Buff AI 1,01000000
-01000003=0,Odkryj 1,01000002
-01000005=0,New trigger 1,01000004
-01000007=0,Paczki 1,01000006
-01000009=2,Oltarz 1,01000008
-01000011=2,BURZA 1,01000010
-01000013=2,ZACIEMNIACZ 1,01000012
-01000015=0,INTRO 1,01000014
-01000017=2,aiattack 1,01000016
-
 [TeamTypes]
 
 [Terrain]
@@ -2388,17 +2324,6 @@ DestroyableBridges=yes
 137094=HDSTN01
 141139=TIBTRE01
 
-[Triggers]
-01000000=Neutral,<none>,Buff AI,0,1,1,1,0
-01000002=Neutral,<none>,Odkryj,0,1,1,1,0
-01000004=Americans,<none>,New trigger,0,1,1,1,0
-01000006=Neutral,<none>,Paczki,0,1,1,1,0
-01000008=Neutral,<none>,Oltarz,0,1,1,1,0
-01000010=Neutral,<none>,BURZA,0,1,1,1,0
-01000012=Neutral,<none>,ZACIEMNIACZ,0,1,1,1,0
-01000014=Neutral,<none>,INTRO,0,1,1,1,0
-01000016=Neutral,<none>,aiattack,0,1,1,1,0
-
 [Units]
 0=Neutral,YTNK,256,71,62,64,Guard,None,0,-1,0,-1,1,0
 1=Neutral,YTNK,256,55,71,64,Guard,None,0,-1,0,-1,1,0
@@ -2438,9 +2363,6 @@ NodeCount=0
 TechLevel=1
 PercentBuilt=0
 PlayerControl=no
-
-[mbnqcv41]
-CrateGoodie=no
 
 [Digest]
 1=+l/nnIAShfpifuh7S7EhqxIEwmg=
