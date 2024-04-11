@@ -1,2 +1,2 @@
 # Don't track any .mix file in main project folder
-./*.mix
+*.mix
