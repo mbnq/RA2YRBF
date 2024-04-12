@@ -11,7 +11,6 @@ echo:Removing old mix files if needed...&&echo:
 	
 echo:Compiling mix files...&&echo:
 
-
 for /f "tokens=*" %%f in ('dir "MIX\" /a:d /b') do (
 	echo Compiling %%f.mix...&&echo:
 	Tools\ccmix\ccmix.exe --create --lmd --game=ts --dir "MIX\%%f" --mix "%%f.mix"
@@ -20,4 +19,5 @@ for /f "tokens=*" %%f in ('dir "MIX\" /a:d /b') do (
 
 set tmp=%0
 echo:Done. Check mix files in [%tmp:~1,-11%] folder.&&echo:
-pause
+echo:Press any key to exit...
+pause > nul
