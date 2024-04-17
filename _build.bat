@@ -3,11 +3,10 @@ chcp 65001 > nul
 cls
 
 echo:Removing old mix files if needed...&&echo:
-	if exist "expandmd70.mix" del /q /f "expandmd70.mix"
-	if exist "expandmd71.mix" del /q /f "expandmd71.mix"
-	if exist "expandmd72.mix" del /q /f "expandmd72.mix"
-	if exist "expandmd73.mix" del /q /f "expandmd73.mix"
-	echo:&&	timeout /t 1 > nul
+	for %%f in (expandmd70.mix expandmd71.mix expandmd72.mix expandmd73.mix) do (
+		if exist "%%f" del /f "%%f"
+	)
+	echo:&&	timeout /t 2 > nul
 	
 echo:Compiling mix files...&&echo:
 
