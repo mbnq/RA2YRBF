@@ -24,7 +24,7 @@ goto bye
 
 :bye
 	echo:
-	echo:Press any key to quit this uninstaller...
+	echo:Press any key to quit this script...
 	pause > nul
 endlocal	
 exit
