@@ -50,7 +50,9 @@ if %filesExist%==1 (
 		goto byeanddelete
     ) else (
 		call :intro
-        echo: Thank you for staying with us Commander^^!
+		echo: 
+        echo: Entered wrong safety code, uninstallation cancelled^^!
+		echo: 
 		goto bye
     )
 ) else (
