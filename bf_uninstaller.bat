@@ -4,6 +4,7 @@ title Mbnq's Brute Force Uninstaller
 REM mbnq00@gmail.com
 REM https://www.mbnq.pl/
 
+cls
 call :intro
 
 if exist ".gitattributes" (echo:Warning^^! detected repo files^^!)&&(goto bye)
@@ -50,6 +51,7 @@ if %filesExist%==1 (
 		goto byeanddelete
     ) else (
 		call :intro
+		call :error0001		
 		echo: 
         echo: Entered wrong safety code, uninstallation cancelled^^!
 		echo: 
@@ -91,3 +93,15 @@ exit
 	echo:л                                                       л
 	echo:ллллллллллллллллллллллллллллллллллллллллллллллллллллллллл
 	echo:
+	exit /b
+	
+:error0001
+	echo:EEEEEEE EEEEEE  EEEEEE   EEEEEE  EEEEEE  
+	echo:EE      EE   EE EE   EE EE    EE EE   EE 
+	echo:EEEEE   EEEEEE  EEEEEE  EE    EE EEEEEE  
+	echo:EE      EE   EE EE   EE EE    EE EE   EE 
+	echo:EEEEEEE EE   EE EE   EE  EEEEEE  EE   EE 
+	echo:
+	exit /b
+	
+
