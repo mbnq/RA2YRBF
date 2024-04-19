@@ -18,7 +18,7 @@ set "SourceDir=F:\projekty\_cnc_\RA2BruteForce\RA2BF\RA2YRBF"
 set /p ArchiveName=Name your release suffix (preffix is "%verPreffix%"): 
 set "OutputArchive=%verPreffix%%ArchiveName%.zip"
 
-%RarPath% a -r -ep1 "%OutputArchive%" "%SourceDir%" -z"%SourceDir%\README.md" -x"%SourceDir%\_build.bat" -x"%SourceDir%\MIX" -x"%SourceDir%\tools\ccmix" -x"%SourceDir%\.git" -x"%SourceDir%\.gitattributes" -x"%SourceDir%\.gitignore"
+%RarPath% a -r -ep1 "%OutputArchive%" "%SourceDir%" -z"%SourceDir%\README.md" -x"%SourceDir%\_build.bat" -x"%SourceDir%\MIX" -x"%SourceDir%\tools" -x"%SourceDir%\tools\ccmix" -x"%SourceDir%\.git" -x"%SourceDir%\.gitattributes" -x"%SourceDir%\.gitignore"
 
 echo Archive ready: %OutputArchive%
 goto bye
