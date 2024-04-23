@@ -17,22 +17,8 @@ Waypoint8=0,0
 NumberStartingPoints=6
 NumCoopHumanStartSpots=2
 
-[Animations]
-4003=METLARGE
-4004=METSMALL
-4005=METDEBRI
-4006=METSTRAL
-4007=METLTRAL
-
 [CombatDamage]
 BridgeStrength=10000
-
-[METEOR01]
-ExpireAnim=TWLT070T
-
-[METEOR02]
-ExpireAnim=TWLT100I
-
 
 [Preview]
 Size=0,0,174,122
@@ -556,18 +542,6 @@ Size=0,0,174,122
 516=xBcAAgWjwIKg8IsKWNJP8gtq6gJ7wMOT4IppwovgC5sCI4XaxJCkJFR0JFRjY6PUNFRjuY
 517=vgS2rqA7P0JDkAIDQkVGQkVHrMEPtq6gtq6guLChuLChtq6gtq6gEQAA
 
-[Actions]
-01000000=1,58,0,2,0,0,0,0,U
-01000002=1,58,0,3,0,0,0,0,V
-01000004=1,58,0,2,0,0,0,0,W
-01000006=1,58,0,2,0,0,0,0,X
-01000008=1,58,0,2,0,0,0,0,Y
-01000010=1,58,0,2,0,0,0,0,Z
-01000012=1,58,0,3,0,0,0,0,AA
-01000014=1,58,0,2,0,0,0,0,AB
-01000016=1,58,0,3,0,0,0,0,AC
-01000018=3,21,6,EVA_NewTerrainDiscovered,0,0,0,0,A,17,0,41,0,0,0,0,A,17,0,40,0,0,0,0,A
-
 [Aircraft]
 0=Neutral,PDPLANE,9,194,126,224,Sleep,None,0,0,1,0
 
@@ -598,18 +572,6 @@ VeinGrowthEnabled=no
 TiberiumGrowthEnabled=yes
 IgnoreGlobalAITriggers=no
 TiberiumDeathToVisceroid=no
-
-[Events]
-01000000=1,51,0,1200
-01000002=1,51,0,1200
-01000004=1,51,0,1200
-01000006=1,51,0,1200
-01000008=1,51,0,1200
-01000010=1,51,0,1200
-01000012=1,51,0,1200
-01000014=1,51,0,1200
-01000016=1,51,0,1200
-01000018=1,13,0,50
 
 [Infantry]
 0=Neutral,E1,256,120,149,1,Area Guard,64,None,0,-1,0,1,0
@@ -3474,18 +3436,6 @@ DestroyableBridges=yes
 287=Neutral,CAMSC11,154,129,192,64,None,1,0,1,0,0,None,None,None,0,0
 288=Neutral,CAOILDMBNQ,103,41,115,64,None,1,0,1,0,0,None,None,None,0,0
 
-[Tags]
-01000001=2,BFmeteors0 1,01000000
-01000003=2,BFmeteors1 1,01000002
-01000005=2,BFmeteors2 1,01000004
-01000007=2,BFmeteors3 1,01000006
-01000009=2,BFmeteors4 1,01000008
-01000011=2,BFmeteors5 1,01000010
-01000013=2,BFmeteors6 1,01000012
-01000015=2,BFmeteors7 1,01000014
-01000017=2,BFmeteors8 1,01000016
-01000019=0,BFDeshroud 1,01000018
-
 [TeamTypes]
 
 [Terrain]
@@ -4297,18 +4247,6 @@ DestroyableBridges=yes
 203122=TREE16
 203123=TREE02
 
-[Triggers]
-01000000=Neutral,<none>,BFmeteors0,0,1,1,1,0
-01000002=Neutral,<none>,BFmeteors1,0,1,1,1,0
-01000004=Neutral,<none>,BFmeteors2,0,1,1,1,0
-01000006=Neutral,<none>,BFmeteors3,0,1,1,1,0
-01000008=Neutral,<none>,BFmeteors4,0,1,1,1,0
-01000010=Neutral,<none>,BFmeteors5,0,1,1,1,0
-01000012=Neutral,<none>,BFmeteors6,0,1,1,1,0
-01000014=Neutral,<none>,BFmeteors7,0,1,1,1,0
-01000016=Neutral,<none>,BFmeteors8,0,1,1,1,0
-01000018=Neutral,<none>,BFDeshroud,0,1,1,1,0
-
 [Waypoints]
 0=151146
 1=151162
@@ -4327,8 +4265,6 @@ DestroyableBridges=yes
 28=81094
 40=138148
 41=127147
-
-
 
 [Digest]
 1=l3BhIgUyLIYX0XSi41lX7dUlE4c=
