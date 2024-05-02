@@ -899,13 +899,14 @@ Size=0,0,184,92
 
 [Basic]
 Name=[BFRMX] Hammer and Sickle 2
-Theme=No theme
 Briefing=Brief:TRN01
 GameMode=standard, meatgrind, navalwar, nukewar, airwar, megawealth, duel, cooperative, teamgame
-FreeRadar=no
+Official=no
 MaxPlayer=5
-MinPlayer=2
+MinPlayer=1
+NewINIFormat=4
 BridgeStrength=20000
+MultiplayerOnly=0
 
 [CellTags]
 
@@ -3161,7 +3162,19 @@ LocalSize=2,5,93,92
 38=D/gAUAACD+ACD/gAUAACD+ACD/gAUAACD+ACD/gAUAACD+ACD/gAUAACD+ACD/gA==
 
 [SpecialFlags]
+Inert=no
+FogOfWar=no
+IonStorms=no
+MCVDeploy=no
+Meteorites=no
+Visceroids=no
+FixedAlliance=no
+TiberiumGrows=yes
 BridgeStrength=20000
+InitialVeteran=no
+HarvesterImmune=no
+TiberiumSpreads=yes
+TiberiumExplosive=no
 DestroyableBridges=yes
 
 [Structures]
