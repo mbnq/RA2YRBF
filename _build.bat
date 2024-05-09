@@ -12,7 +12,7 @@ echo:Compiling mix files...&&echo:
 
 for /f "tokens=*" %%f in ('dir "MIX\" /a:d /b') do (
 	echo Compiling %%f.mix...&&echo:
-	Tools\ccmix\ccmix.exe --create --lmd --game=ts --dir "MIX\%%f" --mix "%%f.mix"
+	Tools\ccmix\ccmix.exe --create --lmd --game=ra2 --dir "MIX\%%f" --mix "%%f.mix"
 	echo.
 	)
 
