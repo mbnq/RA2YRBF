@@ -52,5 +52,7 @@ All content directly derived from the "Brute Force" modification is permissible 
 in another Command & Conquer game modification, 
 under the condition of crediting the authorship (www.mbnq.pl) under the "CC BY-NC-SA 4.0 DEED" license.
 
+EA has not endorsed and does not support this product.
+
 ***********************************************************************
 mbnq.pl 2012 - 2024
