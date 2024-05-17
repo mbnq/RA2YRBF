@@ -41,6 +41,11 @@ Note: In the nearest future autoupdater will be included.
   Factors that affect FPS in the game includes the map (pathfinding), the number of AI players, and difficulty settings. 
   If you're experiencing performance issues, try using simpler maps (included), fewer AI players, or lower difficulty settings. 
   I'm continually working on optimization tweaks.
+  You can also use recently implemented settings in skirmish/mp menu such as:
+	- AI Attack Rate
+	- AI Stray
+	- AI Base Size
+	- AI Path Tick Time
 
 ***********************************************************************
 **FAQ:**
@@ -61,7 +66,19 @@ All content directly derived from the "Brute Force" modification is permissible 
 in another Command & Conquer game modification, 
 under the condition of crediting the authorship (www.mbnq.pl) under the "CC BY-NC-SA 4.0 DEED" license.
 
-License from EA: C&C assets, including game code, art, music, and all other content, are and shall remain the sole and exclusive property of EA (the “C&C Assets”). To the extent any C&C Assets are used in Mods, EA grants the Mod creator a revocable, limited, non-exclusive, non-commercial license to use the C&C Assets solely in connection with, and as a part of, the Mod and subject to the terms of this Policy. Your Mod must not include any music files from any C&C games. EA reserves the right, in its sole discretion, to revoke this license at any time. EA has not endorsed and does not support this product.
+License from EA: C&C assets, including game code, art, music, and all other content, 
+are and shall remain the sole and exclusive property of EA (the “C&C Assets”). 
+To the extent any C&C Assets are used in Mods, EA grants the Mod creator a revocable, 
+limited, non-exclusive, non-commercial license to use the C&C Assets solely in connection with, 
+and as a part of, the Mod and subject to the terms of this Policy. 
+Your Mod must not include any music files from any C&C games. 
+EA reserves the right, in its sole discretion, to revoke this license at any time. 
+EA has not endorsed and does not support this product.
+
+If you find any content to which you hold the copyright or believe that I am using 
+your intellectual property inappropriately, please contact me, and I will correct it immediately. 
+Please be aware that such a situation should not occur, 
+as I strive to fully respect copyright and intellectual property licenses.
 
 ***********************************************************************
 mbnq.pl 2012 - 2024
