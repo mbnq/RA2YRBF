@@ -64,7 +64,8 @@ All external solutions utilized in "Brute Force" belong to their rightful owners
 None of the solutions employed are for commercial or malicious purposes. 
 All content directly derived from the "Brute Force" modification is permissible for reuse at no cost, 
 in another Command & Conquer game modification, 
-under the condition of crediting the authorship (www.mbnq.pl) under the "CC BY-NC-SA 4.0 DEED" license.
+under the condition of crediting the authorship (www.mbnq.pl) under the "CC BY-NC-SA 4.0 DEED" license
+with exception for music and audio samples. You cannot use original mod music without written permission.
 
 **EA required disclaimer:**
 
