@@ -17,10 +17,19 @@ This mod requires a clean installation of Red Alert 2 and the Yuri's Revenge exp
 Ensure your game is updated to version 1.001 before installation.
 Works well with the EA and Steam version.
 
+**Updating:**
+- run bf_uninstaller.bat in your game directory, enter random safety code and pres enter
+- unzip, and copy files into the game directory
+- when windows ask for replacing 2 files do not replace - if you want to keep your settings
+
+Note: In the nearest future autoupdater will be included.
+
 ***********************************************************************
 **Important:**
 
 - Use *BFLauncher.exe* to run the mod
+- If nothing happens when you run *BFLauncher.exe* check FAQ point 6 (link to FAQ below)
+
 - Yuri is the main opponent, you should play against him
 - Brute Force is still in the beta phase, which means bugs, glitches and crashes will occur
 - Each included tool from tools folder comes with its own readme file
