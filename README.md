@@ -66,6 +66,7 @@ All content directly derived from the "Brute Force" modification is permissible 
 in another Command & Conquer game modification, 
 under the condition of crediting the authorship (www.mbnq.pl) under the "CC BY-NC-SA 4.0 DEED" license.
 
+**EA required disclaimer:**
 License from EA: C&C assets, including game code, art, music, and all other content, 
 are and shall remain the sole and exclusive property of EA (the “C&C Assets”). 
 To the extent any C&C Assets are used in Mods, EA grants the Mod creator a revocable, 
@@ -75,6 +76,7 @@ Your Mod must not include any music files from any C&C games.
 EA reserves the right, in its sole discretion, to revoke this license at any time. 
 EA has not endorsed and does not support this product.
 
+**Additional informations:**
 If you find any content to which you hold the copyright or believe that I am using 
 your intellectual property inappropriately, please contact me, and I will correct it immediately. 
 Please be aware that such a situation should not occur, 
