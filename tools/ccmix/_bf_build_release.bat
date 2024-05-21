@@ -21,7 +21,13 @@ set "OutputArchive=%verPreffix%%ArchiveName%.zip"
 %RarPath% a -r -ep1 "%OutputArchive%" "%SourceDir%" -z"%SourceDir%\README.md" -x"%SourceDir%\desktop.ini" -x"%SourceDir%\_build.bat" -x"%SourceDir%\MIX" -x"%SourceDir%\tools" -x"%SourceDir%\tools\ccmix" -x"%SourceDir%\.git" -x"%SourceDir%\.gitattributes" -x"%SourceDir%\.gitignore" -OS
 
 echo Archive ready: %OutputArchive%
-goto bye
+
+choice /C YN /M "Do you want to upload it as an update for autoupdater? (Y/N)"
+if %errorlevel% equ 1 (
+	copy %OutputArchive% ra2yrbf_patch.zip /y > nul
+	curl -T "ra2yrbf_patch.zip" -u "usernamehere" hostnamehere
+	goto bye
+)
 
 :bye
 	echo:
