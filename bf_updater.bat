@@ -105,6 +105,11 @@ if %ERRORLEVEL% neq 0 (
     goto bye
 )
 
+echo:
+echo Cleaning up...
+echo:
+rd /s /q "%bfTempPath%"
+
 call :intro
 echo Success^^!
 echo Mod files has been updated.
