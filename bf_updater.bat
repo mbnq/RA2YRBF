@@ -26,13 +26,6 @@ cls
 call :intro
 
 set "gameRoot=%cd%"
-
-if not exist "%gameRoot%" (
-	call :error0001
-	echo:Was not able to create temporary files.
-	goto bye
-)
-
 cd "%gameRoot%"
 
 set url=https://bf.mbnq.pl/patch/ra2yrbf_patch.zip
@@ -43,6 +36,12 @@ set "bfFiles=INI Maps Resources tools debug audio.bag audio.idx syringe.log spaw
 
 if not exist "%bfTempPath%" mkdir "%bfTempPath%"
 if not exist "%extractedPath%" mkdir "%extractedPath%"
+
+if not exist "%bfTempPath%" (
+	call :error0001
+	echo:Was not able to create temporary files.
+	goto bye
+)
 
 echo:
 echo Downloading the latest RA2YRBF version available...
