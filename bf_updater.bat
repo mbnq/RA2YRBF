@@ -9,7 +9,8 @@ if exist ".gitattributes" (
 	goto bye
 )
 
-if not exist %windir%\System32\curl.exe (
+where curl > nul 2> nul
+if %ERRORLEVEL% neq 0 (
 	call :error0001
 	echo Cannot find curl.exe^^!
 	goto bye
@@ -59,7 +60,12 @@ if %ERRORLEVEL% neq 0 (
 echo:
 echo Extracting the mod mod files to temporary path...
 echo:
-tar -xf "%downloadedFile%" -C "%extractedPath%" > nul
+powershell -Command "Expand-Archive -Path '%downloadedFile%' -DestinationPath '%extractedPath%'" > nul
+if %ERRORLEVEL% neq 0 (
+    call :error0001
+    echo Failed to extract the update files.
+    goto bye
+)
 
 if not exist "%extractedPath%\RA2YRBF\bf_uninstaller.bat" (
 	call :error0001
