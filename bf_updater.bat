@@ -4,8 +4,17 @@ title Mbnq's Brute Force Updater
 REM mbnq00@gmail.com
 REM https://www.mbnq.pl/
 
-if exist ".gitattributes" (echo:Warning^^! detected repo files^^!)&&(goto bye)
-if not exist %windir%\System32\curl.exe (call :error0001)&&(echo:Cannot find curl.exe^^!)&&(goto bye)
+if exist ".gitattributes" (
+	echo:Warning^^! detected repo files^^!
+	goto bye
+)
+
+if not exist %windir%\System32\curl.exe (
+	call :error0001
+	echo Cannot find curl.exe^^!
+	goto bye
+)
+
 if not exist gamemd.exe (
 	call :error0001
 	echo Cannot find gamemd.exe^^!
