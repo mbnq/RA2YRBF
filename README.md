@@ -3,7 +3,7 @@ Red Alert 2: Yuri's Revenge: Brute Force Mod
 
 ***********************************************************************
 	   ** Red Alert 2 Yuri's Revenge - Brute Force Beta **
-Version: 0.8.42
+Version: 0.8.43
 ***********************************************************************
 **Installation:**
 
@@ -43,6 +43,7 @@ Note: In the nearest future autoupdater will be included.
   I'm continually working on optimization tweaks.
   You can also use recently implemented settings in skirmish/mp menu such as:
 	- AI Attack Rate
+	- AI Mission Rate	
 	- AI Stray
 	- AI Base Size
 	- AI Path Tick Time
