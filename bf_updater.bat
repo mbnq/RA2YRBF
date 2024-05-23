@@ -108,6 +108,7 @@ if %ERRORLEVEL% neq 0 (
 	echo You may need to do that manually.
 	echo.
 	echo Press any key to continue updating...
+	pause > nul
 )
 
 call :sleep
