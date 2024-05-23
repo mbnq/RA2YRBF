@@ -136,7 +136,7 @@ echo:
 copy /y "%backupPath%"\RA2MD.ini RA2MD.ini  > nul
 if %ERRORLEVEL% neq 0 (
 	call :error0001
-    echo Failed to player settings^^!
+    echo Failed to restore player settings^^!
     goto bye
 )
 
