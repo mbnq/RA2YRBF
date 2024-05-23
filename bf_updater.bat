@@ -12,6 +12,8 @@ if exist ".gitattributes" (
 call :intro
 echo This script will update Brute Force to the latest available version.
 echo.
+echo If you encounter an error during updating run updater once again.
+echo.
 echo Warning^^! custom map files will be removed, options will remain saved.&&echo:
 choice /C YN /M "Do you want to run autoupdater? (Y/N)"
 if not %errorlevel% equ 1 (
@@ -92,6 +94,20 @@ if %ERRORLEVEL% neq 0 (
     call :error0001
     echo Failed to extract the update files^^!
     goto bye
+)
+
+call :sleep
+
+echo.
+echo - Unblocking files...
+
+powershell -Command "dir -r '%extractedPath%' | Unblock-File"
+if %ERRORLEVEL% neq 0 (
+	echo.
+    echo Was unable to unblock the files^^!
+	echo You may need to do that manually.
+	echo.
+	echo Press any key to continue updating...
 )
 
 call :sleep
