@@ -100,14 +100,14 @@ echo:
 echo Uninstalling old files...
 echo:
 
-for %%f in (%files%) do (
+for %%f in (%bfFiles%) do (
     if exist "%%f" (
         echo Found: %%f
         set "filesExist=1"
     )
 )
 
-for %%f in (%files%) do (
+for %%f in (%bfFiles%) do (
 	if exist "%%f" (
 		echo Deleting: %%f
 		del /Q /f "%%f"
