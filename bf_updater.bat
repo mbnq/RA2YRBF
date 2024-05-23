@@ -77,8 +77,6 @@ echo - Downloading the latest RA2YRBF version available...
 curl -L -k -o "%downloadedFile%" "%url%"
 
 if %ERRORLEVEL% neq 0 (
-
-	pause > nul	
 	call :error0001
     echo Failed to download the update files.
     goto bye
@@ -151,7 +149,7 @@ echo.
 echo - Cleaning up...
 
 copy /y "%backupPath%\bf_updater.bat" "bf_updater.bat" > nul
-timeout /t 1 > nul
+call :sleep
 rd /s /q "%bfTempPath%"
 
 call :sleep
