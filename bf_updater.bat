@@ -50,7 +50,6 @@ set extractedPath=bftmp\extracted
 set backupPath=bftmp\backup
 set downloadedFile=bftmp\ra2yrbf_patch.zip
 set "bfFiles=INI Maps Resources tools debug audio.bag audio.idx syringe.log spawn.ini rmgmd.ini soundmd.ini spawnmap.ini mpmbnqdummy.ini urbannmd.ini urbanmd.ini temperatmd.ini snowmd.ini desertmd.ini lunarmd.ini rulesmd.ini aimd.ini artmd.ini uimd.ini artmd.ini evamd.ini rbcvbf.ini mpzombie.ini mpmodesmd.ini mpbrutedoomsday2.ini mpanimaldoomsday2.ini heroicvehicles.ini heroicbuildings.ini heroicshields.ini heroicsidebonus.ini heroicbuildingsciv.ini heroicinfantry.ini heroicAI.ini ares.dll ares.dll.inj ares.mix BFLauncher.exe BFLauncherUnix.sh changelog.temp.txt cncnet5.dll expandmd70.mix expandmd71.mix expandmd72.mix expandmd73.mix gamemd.exe Phobos.dll Phobos.pdb qres.dat qres32.dll README.md Syringe.exe bfAI.ini bfAnimal.ini bfBrute.ini bfBuildings.ini bfBuildingsCiv.ini bfInfantry.ini bfLoot.ini bfRMCV.ini bfShields.ini bfSideBonus.ini bfVehicles.ini bfZombie.ini"
-set "filesExist=0"
 
 if not exist "%bfTempPath%" mkdir "%bfTempPath%"
 if not exist "%extractedPath%" mkdir "%extractedPath%"
@@ -101,19 +100,12 @@ echo Uninstalling old files...
 echo:
 
 for %%f in (%bfFiles%) do (
-    if exist "%%f" (
-        echo Found: %%f
-        set "filesExist=1"
-    )
-)
-
-for %%f in (%bfFiles%) do (
 	if exist "%%f" (
 		echo Deleting: %%f
 		del /Q /f "%%f"
 		rd /Q /s "%%f"
-	)
-)
+	) > nul
+) > nul
 
 if exist "cnc-ddraw config.exe" del /q /f "cnc-ddraw config.exe" > nul
 
