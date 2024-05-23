@@ -21,7 +21,7 @@ if not %errorlevel% equ 1 (
 )
 
 echo.
-echo Checking files...
+echo - Checking files...
 echo.
 
 where curl > nul 2> nul
@@ -62,16 +62,18 @@ if not exist "%bfTempPath%" (
 )
 
 echo.
-echo Creating backup of user settings...
+echo - Creating backup of user settings...
 
 copy /y RA2MD.ini "%backupPath%\RA2MD.ini" > nul
+
+call :sleep
 
 if not exist "%backupPath%\RA2MD.ini" (
 	echo:Was not able to backup user settings.
 )
 
 echo.
-echo Downloading the latest RA2YRBF version available...
+echo - Downloading the latest RA2YRBF version available...
 echo.
 curl -L -k -o "%downloadedFile%" "%url%"
 
@@ -83,8 +85,10 @@ if %ERRORLEVEL% neq 0 (
     goto bye
 )
 
+call :sleep
+
 echo.
-echo Extracting new mod files...
+echo - Extracting new mod files...
 echo.
 powershell -Command "Expand-Archive -Path '%downloadedFile%' -DestinationPath '%extractedPath%'" > nul
 if %ERRORLEVEL% neq 0 (
@@ -92,26 +96,35 @@ if %ERRORLEVEL% neq 0 (
     echo Failed to extract the update files^^!
     goto bye
 )
+
+call :sleep
+
 move /y "%extractedPath%\RA2YRBF\bf_updater.bat" "%backupPath%"\bf_updater.bat > nul
 
-:uninstall
-echo.
-echo Uninstalling old files...
-echo.
+call :sleep
 
+:uninstall
 for %%f in (%bfFiles%) do (
 	if exist "%%f" (
 		echo Deleting: %%f
-		del /Q /f "%%f" > nul
-		rd /Q /s "%%f" > nul
+		del /Q /f "%%f"
+		rd /Q /s "%%f"
+		call :intro
+		echo.
+		echo - Uninstalling old files...
+		echo.
 	)
 )
 
 if exist "cnc-ddraw config.exe" del /q /f "cnc-ddraw config.exe" > nul
 
+call :sleep
+pause > nul
+
 :install
+call :intro
 echo.
-echo Copying new version mod files...
+echo - Copying new version mod files...
 echo.
 xcopy /s /e /y "%extractedPath%\RA2YRBF\*" * > nul
 
@@ -121,9 +134,11 @@ if %ERRORLEVEL% neq 0 (
     goto bye
 )
 
+call :sleep
+
 :restore
 echo.
-echo Restoring player settings...
+echo - Restoring player settings...
 echo.
 copy /y "%backupPath%\RA2MD.ini" "RA2MD.ini" > nul
 if %ERRORLEVEL% neq 0 (
@@ -132,13 +147,16 @@ if %ERRORLEVEL% neq 0 (
     goto bye
 )
 
+call :sleep
+
 echo.
-echo Cleaning up...
+echo - Cleaning up...
 echo.
 copy /y "%backupPath%\bf_updater.bat" "bf_updater.bat" > nul
 timeout /t 1 > nul
 rd /s /q "%bfTempPath%"
 
+call :sleep
 call :intro
 echo Success^^!
 echo Mod files have been updated.
@@ -150,6 +168,10 @@ goto bye
 	pause > nul
 endlocal	
 exit
+
+:sleep
+	timeout /t 1 > nul
+	exit /b
 
 :intro
 	cls
