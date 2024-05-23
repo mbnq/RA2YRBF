@@ -111,7 +111,7 @@ for %%f in (%files%) do (
 	if exist "%%f" (
 		echo Deleting: %%f
 		del /Q /f "%%f"
-		rd /Q /s "%%f
+		rd /Q /s "%%f"
 	)
 )
 
