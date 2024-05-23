@@ -22,7 +22,6 @@ if not %errorlevel% equ 1 (
 
 echo.
 echo - Checking files...
-echo.
 
 where curl > nul 2> nul
 if %ERRORLEVEL% neq 0 (
@@ -74,7 +73,7 @@ if not exist "%backupPath%\RA2MD.ini" (
 
 echo.
 echo - Downloading the latest RA2YRBF version available...
-echo.
+
 curl -L -k -o "%downloadedFile%" "%url%"
 
 if %ERRORLEVEL% neq 0 (
@@ -89,7 +88,7 @@ call :sleep
 
 echo.
 echo - Extracting new mod files...
-echo.
+
 powershell -Command "Expand-Archive -Path '%downloadedFile%' -DestinationPath '%extractedPath%'" > nul
 if %ERRORLEVEL% neq 0 (
     call :error0001
@@ -119,13 +118,12 @@ for %%f in (%bfFiles%) do (
 if exist "cnc-ddraw config.exe" del /q /f "cnc-ddraw config.exe" > nul
 
 call :sleep
-pause > nul
 
 :install
 call :intro
 echo.
 echo - Copying new version mod files...
-echo.
+
 xcopy /s /e /y "%extractedPath%\RA2YRBF\*" * > nul
 
 if %ERRORLEVEL% neq 0 (
@@ -139,7 +137,7 @@ call :sleep
 :restore
 echo.
 echo - Restoring player settings...
-echo.
+
 copy /y "%backupPath%\RA2MD.ini" "RA2MD.ini" > nul
 if %ERRORLEVEL% neq 0 (
 	call :error0001
@@ -151,7 +149,7 @@ call :sleep
 
 echo.
 echo - Cleaning up...
-echo.
+
 copy /y "%backupPath%\bf_updater.bat" "bf_updater.bat" > nul
 timeout /t 1 > nul
 rd /s /q "%bfTempPath%"
