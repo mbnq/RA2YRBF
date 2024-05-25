@@ -1,6 +1,6 @@
 @echo off
 setlocal enabledelayedexpansion
-title Mbnq's Brute Force Updater
+title Brute Force Updater
 REM mbnq00@gmail.com
 REM https://www.mbnq.pl/
 
@@ -51,6 +51,7 @@ set extractedPath=%bfTempPath%\extracted
 set backupPath=%bfTempPath%\backup
 set downloadedFile=%bfTempPath%\ra2yrbf_patch.zip
 set "bfFiles=INI Maps Resources tools debug audio.bag audio.idx syringe.log spawn.ini rmgmd.ini soundmd.ini spawnmap.ini mpmbnqdummy.ini urbannmd.ini urbanmd.ini temperatmd.ini snowmd.ini desertmd.ini lunarmd.ini rulesmd.ini aimd.ini artmd.ini uimd.ini artmd.ini evamd.ini rbcvbf.ini mpzombie.ini mpmodesmd.ini mpbrutedoomsday2.ini mpanimaldoomsday2.ini heroicvehicles.ini heroicbuildings.ini heroicshields.ini heroicsidebonus.ini heroicbuildingsciv.ini heroicinfantry.ini heroicAI.ini ares.dll ares.dll.inj ares.mix BFLauncher.exe BFLauncherUnix.sh changelog.temp.txt cncnet5.dll expandmd70.mix expandmd71.mix expandmd72.mix expandmd73.mix gamemd.exe Phobos.dll Phobos.pdb qres.dat qres32.dll README.md Syringe.exe bfAI.ini bfAnimal.ini bfBrute.ini bfBuildings.ini bfBuildingsCiv.ini bfInfantry.ini bfLoot.ini bfRMCV.ini bfShields.ini bfSideBonus.ini bfVehicles.ini bfZombie.ini"
+set /a checkCounter=0
 
 if not exist "%bfTempPath%" mkdir "%bfTempPath%"
 if not exist "%extractedPath%" mkdir "%extractedPath%"
@@ -169,7 +170,22 @@ copy /y "%backupPath%\bf_updater.bat" "bf_updater.bat" > nul
 call :sleep
 rd /s /q "%bfTempPath%"
 
+if %ERRORLEVEL% neq 0 (
+	call :error0001
+    echo Something went wrong^^!
+	echo Please try again.
+    goto bye
+)
+
 call :sleep
+
+if %checkCounter% neq 10 (
+	call :error0001
+    echo Something went wrong^^!
+	echo Please try again.
+    goto bye
+)
+
 call :intro
 echo Success^^!
 echo Mod files have been updated.
@@ -183,6 +199,8 @@ endlocal
 exit
 
 :sleep
+	set /a checkCounter=%checkCounter%+1
+	title [%checkCounter%/10] Brute Force Updater > nul	
 	timeout /t 1 > nul
 	exit /b
 
