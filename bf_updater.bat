@@ -201,7 +201,7 @@ if %checkCounter% neq %checkAll% (
 call :readVersion
 call :intro
 echo Success^^!
-echo Mod files have been updated to version: %bfversion%.
+echo Mod files have been updated to version: %bfversion%
 goto bye
 
 :bye
@@ -219,7 +219,7 @@ exit
 		)
 		set bfversion=!bfversionR!
 	) else (
-		bfversion=unknown
+		set bfversion=unknown
 	)
 	exit /b
 
