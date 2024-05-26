@@ -226,7 +226,7 @@ exit
 	exit /b
 	
 :error0001
-	call :intro
+	rem call :intro
 	echo:EEEEEEE EEEEEE  EEEEEE   EEEEEE  EEEEEE  
 	echo:EE      EE   EE EE   EE EE    EE EE   EE 
 	echo:EEEEE   EEEEEE  EEEEEE  EE    EE EEEEEE  
