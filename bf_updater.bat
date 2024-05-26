@@ -14,6 +14,9 @@ echo This script will update Brute Force to the latest available version.
 echo Custom maps and user options will remain saved.&&echo.
 echo If you encounter an error during updating run updater once again.&&echo.
 
+call :readVersion
+echo Current version is: %bfversion%&&echo.
+
 choice /C YN /M "- Do you want to run autoupdater? (Y/N)"
 if not %errorlevel% equ 1 (
 		call :intro
@@ -195,9 +198,10 @@ if %checkCounter% neq %checkAll% (
     goto bye
 )
 
+call :readVersion
 call :intro
 echo Success^^!
-echo Mod files have been updated.
+echo Mod files have been updated to version: %bfversion%.
 goto bye
 
 :bye
@@ -207,6 +211,17 @@ goto bye
 endlocal	
 exit
 
+:readVersion
+	if exist "readme.md" (
+		for /f "tokens=1,* delims=:" %%a in ('findstr /c:"Version" "readme.md"') do (
+			set "bfversionR=%%b"
+			set "bfversionR=!bfversionR:~1!"
+		)
+		set bfversion=!bfversionR!
+	) else (
+		bfversion=unknown
+	)
+
 :sleep
 	set /a checkCounter=%checkCounter%+1
 	title [%checkCounter%/%checkAll%] BF Updater > nul	
@@ -215,24 +230,24 @@ exit
 
 :intro
 	cls
-	echo:*********************************************************
-	echo:*                                                       *
-	echo:*  Command ^& Conquer Yuri^'s Revenge - Brute Force Mod   *
-	echo:*                                                       *
-	echo:*                                        mbnq.pl 2024   *
-	echo:*                                                       *
-	echo:*********************************************************
-	echo:
+	echo *********************************************************
+	echo *                                                       *
+	echo *  Command ^& Conquer Yuri^'s Revenge - Brute Force Mod   *
+	echo *                                                       *
+	echo *                                        mbnq.pl 2024   *
+	echo *                                                       *
+	echo *********************************************************
+	echo.
 	exit /b
 	
 :error0001
-	rem call :intro
-	echo:EEEEEEE EEEEEE  EEEEEE   EEEEEE  EEEEEE  
-	echo:EE      EE   EE EE   EE EE    EE EE   EE 
-	echo:EEEEE   EEEEEE  EEEEEE  EE    EE EEEEEE  
-	echo:EE      EE   EE EE   EE EE    EE EE   EE 
-	echo:EEEEEEE EE   EE EE   EE  EEEEEE  EE   EE 
-	echo:
+	echo.
+	echo EEEEEEE EEEEEE  EEEEEE   EEEEEE  EEEEEE  
+	echo EE      EE   EE EE   EE EE    EE EE   EE 
+	echo EEEEE   EEEEEE  EEEEEE  EE    EE EEEEEE  
+	echo EE      EE   EE EE   EE EE    EE EE   EE 
+	echo EEEEEEE EE   EE EE   EE  EEEEEE  EE   EE 
+	echo.
 	echo Something went wrong. You can try again.
 	exit /b
 	
