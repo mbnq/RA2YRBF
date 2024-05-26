@@ -68,17 +68,18 @@ echo - Creating backup of user settings and maps...
 
 copy /y RA2MD.ini "%backupPath%\RA2MD.ini" > nul
 xcopy /s /e /y "%gameRoot%\Maps\Custom\" "%backupPath%\Custom\" > nul
+
 if %ERRORLEVEL% neq 0 (
 	call :error0001
     echo Failed to backup user custom maps.
     goto bye
 )
 
-call :sleep
-
 if not exist "%backupPath%\RA2MD.ini" (
 	echo:Was not able to backup user settings.
 )
+
+call :sleep
 
 echo.
 echo - Downloading the latest RA2YRBF version available...
@@ -184,8 +185,6 @@ rd /s /q "%bfTempPath%"
 
 if %ERRORLEVEL% neq 0 (
 	call :error0001
-    echo Something went wrong^^!
-	echo Please try again.
     goto bye
 )
 
@@ -193,8 +192,6 @@ call :sleep
 
 if %checkCounter% neq %checkAll% (
 	call :error0001
-    echo Something went wrong^^!
-	echo Please try again.
     goto bye
 )
 
@@ -236,5 +233,6 @@ exit
 	echo:EE      EE   EE EE   EE EE    EE EE   EE 
 	echo:EEEEEEE EE   EE EE   EE  EEEEEE  EE   EE 
 	echo:
+	echo Something went wrong. You can try again.
 	exit /b
 	
