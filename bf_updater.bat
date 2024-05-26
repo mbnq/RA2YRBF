@@ -15,7 +15,6 @@ echo Custom maps and user options will remain saved.&&echo.
 echo If you encounter an error during updating run updater once again.&&echo.
 
 call :readVersion
-echo Current version is: %bfversion%
 call :readLatestVersion
 echo.
 
@@ -223,6 +222,7 @@ exit
 	) else (
 		set bfversion=unknown
 	)
+	echo Current version is: %bfversion%	
 	exit /b
 	
 :readLatestVersion
