@@ -22,11 +22,14 @@ set "OutputArchive=%verPreffix%%ArchiveName%.zip"
 
 echo Archive ready: %OutputArchive%
 
-choice /C YN /M "Do you want to upload it as an update for autoupdater? (Y/N)"
+choice /C GN /M "Are you ready to upload it as an update for autoupdater? (Go/No)"
+if %errorlevel% neq 1 goto bye
+
+choice /C YN /M "Do you really want to upload it as an update for autoupdater? (Y/N)"
 if %errorlevel% equ 1 (
-	copy %OutputArchive% ra2yrbf_patch.zip /y > nul
-	curl -T "ra2yrbf_patch.zip" -u "usernamehere" hostnamehere
-	goto bye
+    copy "%OutputArchive%" ra2yrbf_patch.zip /y > nul
+    curl -T "ra2yrbf_patch.zip" -u "login:password" ftp.your.server.net
+    goto bye
 )
 
 :bye
