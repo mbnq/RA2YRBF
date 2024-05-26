@@ -15,7 +15,9 @@ echo Custom maps and user options will remain saved.&&echo.
 echo If you encounter an error during updating run updater once again.&&echo.
 
 call :readVersion
-echo Current version is: %bfversion%&&echo.
+echo Current version is: %bfversion%
+call :readLatestVersion
+echo.
 
 choice /C YN /M "- Do you want to run autoupdater? (Y/N)"
 if not %errorlevel% equ 1 (
@@ -222,6 +224,19 @@ exit
 		set bfversion=unknown
 	)
 	exit /b
+	
+:readLatestVersion
+	powershell -NoProfile -Command ^
+		"$url = 'https://raw.githubusercontent.com/mbnq/RA2YRBF/main/README.md';" ^
+		"$html = Invoke-WebRequest -Uri $url;" ^
+		"$versionLine = $html.Content -split \"`n\" | Where-Object { $_ -match 'Version: ' };" ^
+		"if ($versionLine -match 'Version:\s*(\S+)') {" ^
+		"    $version = $matches[1];" ^
+		"    Write-Host 'Latest version is: ' $version;" ^
+		"} else {" ^
+		"    Write-Host 'Latest version is: not found.';" ^
+		"}"
+	exit /b		
 
 :sleep
 	set /a checkCounter=%checkCounter%+1
