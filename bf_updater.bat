@@ -76,11 +76,14 @@ xcopy /s /e /y "%gameRoot%\Maps\Custom\" "%backupPath%\Custom\" > nul
 if %ERRORLEVEL% neq 0 (
 	call :error0001
     echo Failed to backup user custom maps.
-    goto bye
+	echo If you want to abort close the updater now.	
+	pause > nul
 )
 
 if not exist "%backupPath%\RA2MD.ini" (
 	echo:Was not able to backup user settings.
+	echo If you want to abort close the updater now.	
+	pause > nul	
 )
 
 call :sleep
