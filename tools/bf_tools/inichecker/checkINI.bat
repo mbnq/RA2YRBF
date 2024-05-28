@@ -4,27 +4,36 @@ title Mbnq's INI Checker
 REM mbnq00@gmail.com
 REM https://www.mbnq.pl/
 
+set logfile=log.txt
+set pyScript=checkINI.py
+
 call :intro
 echo.
 echo - Starting
 
-if not exist log.txt (
+if not exist %logfile% (
 	echo - Creating new log file
-	echo:>log.txt
+	call :logHeader
 ) else (
 	echo - Wiping log file
-	echo:>log.txt
+	call :logHeader
 )
 
 echo - Scanning...
 
 for %%f in (*.ini) do (
-    python checkINI.py "%%f" >> log.txt
+    python %pyScript% "%%f" >> %logfile%
 )
 
 echo Done.
-type log.txt
-goto :bye
+type %logfile%
+echo.
+choice /C YN /M "- Do you want to open log file? (Y/N)"
+if %errorlevel% equ 1 (
+	start %logfile%
+)
+
+goto :byewithexit
 
 :bye
 	echo.
@@ -33,6 +42,13 @@ goto :bye
 endlocal	
 exit
 
+:logHeader
+	echo _______________________________>%logfile%
+	echo:%date% %time%>>%logfile%
+	echo _______________________________>>%logfile%
+	echo.>>%logfile%
+	exit /b
+	
 :sleep
 	timeout /t 1 > nul
 	exit /b
@@ -58,3 +74,6 @@ exit
 	echo:EEEEEEE EE   EE EE   EE  EEEEEE  EE   EE 
 	echo:
 	exit /b
+	
+:byewithexit
+	exit
