@@ -11,18 +11,20 @@ Version: 0.8.4414
 - Use *BFLauncher.exe* to start the game
 
 If you are not installing for the first time but updating the Brute Force mod
-use bf_uninstaller.bat first then install the new version of the mod.
+use bf_updater.bat to install most up to date version of the mod.
 
 This mod requires a clean installation of Red Alert 2 and the Yuri's Revenge expansion pack to play.
 Ensure your game is updated to version 1.001 before installation.
 Works well with the EA and Steam version.
 
 **Updating:**
+- run bf_updater.bat in your game directory, follow the instructions
+
+  or
+
 - run bf_uninstaller.bat in your game directory, enter random safety code and pres enter
 - unzip, and copy files into the game directory
 - when windows ask for replacing 2 files do not replace - if you want to keep your settings
-
-Note: In the nearest future autoupdater will be included.
 
 ***********************************************************************
 **Important:**
