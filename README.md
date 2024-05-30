@@ -17,10 +17,12 @@ This mod requires a clean installation of Red Alert 2 and the Yuri's Revenge exp
 Ensure your game is updated to version 1.001 before installation.
 Works well with the EA and Steam version.
 
+***********************************************************************
 **Updating:**
+
 - run bf_updater.bat in your game directory, follow the instructions
 
-  or
+**or:**
 
 - run bf_uninstaller.bat in your game directory, enter random safety code and pres enter
 - unzip, and copy files into the game directory
