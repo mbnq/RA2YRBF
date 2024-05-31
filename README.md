@@ -21,6 +21,7 @@ Works well with the EA and Steam version.
 **Updating:**
 
 - run bf_updater.bat in your game directory, follow the instructions
+  (this will keep your settings and custom maps saved)
 
 **or:**
 
