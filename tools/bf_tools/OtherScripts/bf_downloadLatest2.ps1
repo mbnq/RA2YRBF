@@ -21,7 +21,7 @@
 $repo = "mbnq/RA2YRBF"
 $textRepo = "GitHub/"+$repo
 
-Write-Host "This script will download latest .zip release from: $textRepo"
+Write-Host "-- This script will download latest .zip release from: $textRepo"
 
 $releaseInfo = Invoke-RestMethod -Uri "https://api.github.com/repos/$repo/releases"
 
