@@ -49,7 +49,6 @@ set "gameRoot=%cd%"
 cd "%gameRoot%"
 
 set url=https://bf.mbnq.pl/patch/ra2yrbf_patch.zip
-set "psScriptUrl=https://raw.githubusercontent.com/mbnq/RA2YRBF/main/tools/bf_tools/OtherScripts/bf_downloadLatest2.ps1"
 set bfTempPath=bftmp
 set extractedPath=%bfTempPath%\extracted
 set backupPath=%bfTempPath%\backup
@@ -75,14 +74,15 @@ copy /y RA2MD.ini "%backupPath%\RA2MD.ini" > nul
 xcopy /s /e /y "%gameRoot%\Maps\Custom\" "%backupPath%\Custom\" > nul
 
 if %ERRORLEVEL% neq 0 (
+	call :error0001
     echo Failed to backup user custom maps.
-	echo If you want to abort close the updater now or press any key to ignore.	
+	echo If you want to abort close the updater now.	
 	pause > nul
 )
 
 if not exist "%backupPath%\RA2MD.ini" (
 	echo:Was not able to backup user settings.
-	echo If you want to abort close the updater now or press any key to ignore.	
+	echo If you want to abort close the updater now.	
 	pause > nul	
 )
 
@@ -91,37 +91,6 @@ call :sleep
 echo.
 echo - Downloading the latest RA2YRBF version available...
 
-:: ---------------------------------------------------------------------------------------------
-:WITHGH
-echo.
-echo - Downloading github downloader script...
-echo.
-
-powershell -Command "Invoke-WebRequest -Uri %psScriptUrl% -OutFile bf_downloadLatest2.ps1"
-if %ERRORLEVEL% neq 0 (
-	call :error0001
-    echo Failed to download downloader script.
-    goto WITHCURL
-)
-
-echo.
-echo - Starting github downloader script...
-echo.
-
-powershell -ExecutionPolicy Bypass -File bf_downloadLatest2.ps1
-if %ERRORLEVEL% neq 0 (
-    echo Failed to run downloader script will try with CURL.
-    goto WITHCURL
-)
-
-call :sleep
-
-MOVE /Y "ra2yrbf_latest.zip" "%downloadedFile%"
-
-GOTO EXTRACT	
-
-:: ---------------------------------------------------------------------------------------------
-:WITHCURL
 curl -L -k -o "%downloadedFile%" "%url%"
 
 if %ERRORLEVEL% neq 0 (
@@ -132,8 +101,6 @@ if %ERRORLEVEL% neq 0 (
 
 call :sleep
 
-:: ---------------------------------------------------------------------------------------------
-:EXTRACT
 echo.
 echo - Extracting new mod files...
 
@@ -221,8 +188,7 @@ echo - Cleaning up...
 
 copy /y "%backupPath%\bf_updater.bat" "bf_updater.bat" > nul
 call :sleep
-rd /s /q "%bfTempPath%" > nul
-if exist "bf_downloadLatest2.ps1" del /q /f "bf_downloadLatest2.ps1" > nul
+rd /s /q "%bfTempPath%"
 
 if %ERRORLEVEL% neq 0 (
 	call :error0001

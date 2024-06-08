@@ -1,8 +1,10 @@
+:: mbnq00@gmail.com
+:: https://www.mbnq.pl/
+
 @echo off
 setlocal enabledelayedexpansion
 title Brute Force Updater
-REM mbnq00@gmail.com
-REM https://www.mbnq.pl/
+color 09
 
 if exist ".gitattributes" (
 	echo Warning^^! detected repo files^^!
@@ -28,13 +30,6 @@ if not %errorlevel% equ 1 (
 echo.
 echo - Checking files...
 
-where curl > nul 2> nul
-if %ERRORLEVEL% neq 0 (
-	call :error0001
-	echo Cannot find curl.exe^^!
-	goto bye
-)
-
 if not exist gamemd.exe (
 	call :error0001
 	echo Cannot find gamemd.exe^^!
@@ -42,6 +37,8 @@ if not exist gamemd.exe (
 )
 
 taskkill /im clientdx.exe > nul
+taskkill /im gamemd.exe > nul
+
 cls
 call :intro
 
@@ -49,6 +46,9 @@ set "gameRoot=%cd%"
 cd "%gameRoot%"
 
 set url=https://bf.mbnq.pl/patch/ra2yrbf_patch.zip
+set psScriptName=bf_downloadLatest2.ps1
+
+set "psScriptUrl=https://raw.githubusercontent.com/mbnq/RA2YRBF/main/tools/bf_tools/OtherScripts/%psScriptName%"
 set bfTempPath=bftmp
 set extractedPath=%bfTempPath%\extracted
 set backupPath=%bfTempPath%\backup
@@ -69,20 +69,20 @@ if not exist "%bfTempPath%" (
 
 echo.
 echo - Creating backup of user settings and maps...
+echo.
 
 copy /y RA2MD.ini "%backupPath%\RA2MD.ini" > nul
 xcopy /s /e /y "%gameRoot%\Maps\Custom\" "%backupPath%\Custom\" > nul
 
 if %ERRORLEVEL% neq 0 (
-	call :error0001
     echo Failed to backup user custom maps.
-	echo If you want to abort close the updater now.	
+	echo If you want to abort close the updater now or press any key to ignore.	
 	pause > nul
 )
 
 if not exist "%backupPath%\RA2MD.ini" (
 	echo:Was not able to backup user settings.
-	echo If you want to abort close the updater now.	
+	echo If you want to abort close the updater now or press any key to ignore.	
 	pause > nul	
 )
 
@@ -90,6 +90,54 @@ call :sleep
 
 echo.
 echo - Downloading the latest RA2YRBF version available...
+echo.
+
+:: ---------------------------------------------------------------------------------------------
+:WITHGH
+echo.
+echo - Downloading github downloader script...
+echo.
+
+powershell -Command "Invoke-WebRequest -Uri %psScriptUrl% -OutFile %psScriptName%" > nul
+if %ERRORLEVEL% neq 0 (
+    echo Failed to download downloader script.
+    goto WITHCURL
+)
+
+echo.
+echo - Starting github downloader script...
+echo.
+
+if exist %psScriptName% (
+	powershell -ExecutionPolicy Bypass -File %psScriptName%
+) else (
+    echo Failed to run downloader script will try with CURL now...
+	goto WITHCURL
+)
+
+if %ERRORLEVEL% neq 0 (
+    echo Failed to run downloader script will try with CURL now...
+    goto WITHCURL
+)
+
+
+MOVE /Y "ra2yrbf_latest.zip" "%downloadedFile%" > nul
+call :sleep
+if exist "%downloadedFile%" goto EXTRACT
+
+:: ---------------------------------------------------------------------------------------------
+:WITHCURL
+
+where curl > nul 2> nul
+if %ERRORLEVEL% neq 0 (
+	call :error0001
+	echo Cannot find curl.exe^^!
+	goto bye
+)
+
+echo.
+echo - Downloading with CURL...
+echo.
 
 curl -L -k -o "%downloadedFile%" "%url%"
 
@@ -101,6 +149,8 @@ if %ERRORLEVEL% neq 0 (
 
 call :sleep
 
+:: ---------------------------------------------------------------------------------------------
+:EXTRACT
 echo.
 echo - Extracting new mod files...
 
@@ -188,7 +238,8 @@ echo - Cleaning up...
 
 copy /y "%backupPath%\bf_updater.bat" "bf_updater.bat" > nul
 call :sleep
-rd /s /q "%bfTempPath%"
+rd /s /q "%bfTempPath%" > nul
+if exist %psScriptName% del /q /f %psScriptName% > nul
 
 if %ERRORLEVEL% neq 0 (
 	call :error0001
