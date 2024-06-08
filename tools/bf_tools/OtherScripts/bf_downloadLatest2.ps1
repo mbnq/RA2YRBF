@@ -10,8 +10,8 @@
 	 https://www.mbnq.pl/
 
 
-	 .ini 	Version: 0.8.4506
-	  mod	Version: 0.8.4506
+	 .ini 	Version: 0.8.4507
+	  mod	Version: 0.8.4507
 
 	 This script will download latest push from GitHub repo.
 	 Simplified version for batch script usage.
@@ -21,12 +21,12 @@
 $repo = "mbnq/RA2YRBF"
 $textRepo = "GitHub/"+$repo
 
-Write-Host "-- This script will download latest .zip release from: $textRepo"
+Write-Host "-- This script will download latest release from: $textRepo"
 
 $releaseInfo = Invoke-RestMethod -Uri "https://api.github.com/repos/$repo/releases"
 
 if ($releaseInfo -eq $null -or $releaseInfo.Count -eq 0) {
-    Write-Host "- Failed to get release info from $textRepo!"
+    Write-Host "-- Failed to get release info from $textRepo!"
     exit 1
 }
 
@@ -43,19 +43,19 @@ foreach ($release in $releaseInfo) {
 }
 
 if ($downloadUrl -eq $null) {
-    Write-Host "- Failed to find the latest release in $textRepo!"
+    Write-Host "-- Failed to find the latest release in $textRepo!"
     exit 1
 }
 
-Write-Host "- Downloading latest from $textRepo..."
+Write-Host "-- Downloading latest from $textRepo..."
 $outputFile = "ra2yrbf_latest.zip"
 Invoke-WebRequest -Uri $downloadUrl -OutFile $outputFile
 
 if (-Not (Test-Path $outputFile)) {
-    Write-Host "- Failed to download the latest release from $textRepo!"
+    Write-Host "-- Failed to download the latest release from $textRepo!"
     exit 1
 }
 
-Write-Host "- Download complete!"
+Write-Host "-- Download complete!"
 
 exit 0
