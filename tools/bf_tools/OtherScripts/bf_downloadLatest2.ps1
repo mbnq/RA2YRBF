@@ -51,6 +51,10 @@ Write-Host "-- Downloading latest from $textRepo..." -ForegroundColor Green
 Write-Host "-- Download URL: $downloadUrl" -ForegroundColor Green
 $outputFile = "ra2yrbf_latest.zip"
 
+# Additional logging
+Write-Host "-- Download URL: $downloadUrl" -ForegroundColor Yellow
+Write-Host "-- Output File: $outputFile" -ForegroundColor Yellow
+
 try {
     Start-BitsTransfer -Source $downloadUrl -Destination $outputFile -DisplayName "Downloading the latest mod version from GitHub. Please wait..." -Description "Progress:"
 } catch {
