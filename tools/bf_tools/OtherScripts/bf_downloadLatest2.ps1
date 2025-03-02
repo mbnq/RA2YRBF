@@ -10,8 +10,8 @@
 	 https://www.mbnq.pl/
 
 
-	 .ini 	Version: 0.8.4525
-	  mod	Version: 0.8.4525
+	 .ini 	Version: 0.8.4525e
+	  mod	Version: 0.8.4525e
 
 	 This script will download latest push from GitHub repo.
 	 Simplified version for batch script usage.
@@ -50,7 +50,7 @@ if ($downloadUrl -eq $null) {
 Write-Host "-- Trying to download from: $downloadUrl" -ForegroundColor Cyan
 $outputFile = "ra2yrbf_latest.zip"
 
-# Ustawienie TLS 1.2 (GitHub wymaga)
+# TLS 1.2 (GitHub requires this)
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 try {
