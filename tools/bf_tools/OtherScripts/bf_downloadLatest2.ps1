@@ -10,8 +10,8 @@
 	 https://www.mbnq.pl/
 
 
-	 .ini 	Version: 0.8.4507e
-	  mod	Version: 0.8.4507e
+	 .ini 	Version: 0.8.4525
+	  mod	Version: 0.8.4525
 
 	 This script will download latest push from GitHub repo.
 	 Simplified version for batch script usage.
@@ -48,9 +48,15 @@ if ($downloadUrl -eq $null) {
 }
 
 Write-Host "-- Downloading latest from $textRepo..." -ForegroundColor Green
+Write-Host "-- Download URL: $downloadUrl" -ForegroundColor Green
 $outputFile = "ra2yrbf_latest.zip"
-# Invoke-WebRequest -Uri $downloadUrl -OutFile $outputFile
-Start-BitsTransfer -Source $downloadUrl -Destination $outputFile -DisplayName "Downloading the latest mod version from GitHub. Please wait..." -Description "Progress:"
+
+try {
+    Start-BitsTransfer -Source $downloadUrl -Destination $outputFile -DisplayName "Downloading the latest mod version from GitHub. Please wait..." -Description "Progress:"
+} catch {
+    Write-Host "-- Error during download: $_" -ForegroundColor Red
+    exit 1
+}
 
 if (-Not (Test-Path $outputFile)) {
     Write-Host "-- Failed to download the latest release from $textRepo!"-ForegroundColor Red
