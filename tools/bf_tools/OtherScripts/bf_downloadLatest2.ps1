@@ -26,7 +26,7 @@ Write-Host "-- This script will download latest release from: $textRepo" -Foregr
 $releaseInfo = Invoke-RestMethod -Uri "https://api.github.com/repos/$repo/releases"
 
 if ($releaseInfo -eq $null -or $releaseInfo.Count -eq 0) {
-    Write-Host "-- Failed to get release info from $textRepo!" -ForegroundColor Green
+    Write-Host "-- Failed to get release info from $textRepo!" -ForegroundColor Red
     exit 1
 }
 
@@ -47,16 +47,14 @@ if ($downloadUrl -eq $null) {
     exit 1
 }
 
-Write-Host "-- Downloading latest from $textRepo..." -ForegroundColor Green
-Write-Host "-- Download URL: $downloadUrl" -ForegroundColor Green
+Write-Host "-- Trying to download from: $downloadUrl" -ForegroundColor Cyan
 $outputFile = "ra2yrbf_latest.zip"
 
-# Additional logging
-Write-Host "-- Download URL: $downloadUrl" -ForegroundColor Yellow
-Write-Host "-- Output File: $outputFile" -ForegroundColor Yellow
+# Ustawienie TLS 1.2 (GitHub wymaga)
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 try {
-    Start-BitsTransfer -Source $downloadUrl -Destination $outputFile -DisplayName "Downloading the latest mod version from GitHub. Please wait..." -Description "Progress:"
+    Invoke-WebRequest -Uri $downloadUrl -OutFile $outputFile
 } catch {
     Write-Host "-- Error during download: $_.Exception.Message" -ForegroundColor Red
     Write-Host "-- Stack Trace: $_.Exception.StackTrace" -ForegroundColor Red
@@ -64,10 +62,9 @@ try {
 }
 
 if (-Not (Test-Path $outputFile)) {
-    Write-Host "-- Failed to download the latest release from $textRepo!"-ForegroundColor Red
+    Write-Host "-- Failed to download the latest release from $textRepo!" -ForegroundColor Red
     exit 1
 }
 
 Write-Host "-- Download complete!" -ForegroundColor Green
-
 exit 0
