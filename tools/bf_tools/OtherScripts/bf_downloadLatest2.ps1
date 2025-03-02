@@ -54,7 +54,8 @@ $outputFile = "ra2yrbf_latest.zip"
 try {
     Start-BitsTransfer -Source $downloadUrl -Destination $outputFile -DisplayName "Downloading the latest mod version from GitHub. Please wait..." -Description "Progress:"
 } catch {
-    Write-Host "-- Error during download: $_" -ForegroundColor Red
+    Write-Host "-- Error during download: $_.Exception.Message" -ForegroundColor Red
+    Write-Host "-- Stack Trace: $_.Exception.StackTrace" -ForegroundColor Red
     exit 1
 }
 
